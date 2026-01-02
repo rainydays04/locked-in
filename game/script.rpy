@@ -99,7 +99,9 @@ label start:
     narrator"Callista let go of the fairy"
     l"Darn, that really hurt. You know I'm here to help you"
     c"Help me? Help me with what?"
-    narrator"The fairy rolled her eyes"
+    narrator"The fairy rolled her eyes as if the answer was obvious"
+    l"Helping you HAVE a life"
+    c""
 
     
 
