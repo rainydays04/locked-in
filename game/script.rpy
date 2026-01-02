@@ -8,16 +8,20 @@
 define a = Character("Amie")
 define c = Character("Callista")
 define d = Character("Doctor")
+define l = Character("Lilith")
+
 
 
 #character images
 image callista = im.Scale("callista.png",1000,1000)
 image amie = im.Scale("amie.png",1000,1000)
+image lilith = im.Scale("fairy.png",1000,1000)
 
 #background images
 image bg library = im.Scale("library.png",1920,1080)
 image bg empty = im.Scale("empty.png",1920,1080)
 image bg hospital = im.Scale("hospital.png",1920,1080)
+image bg bedroom = im.Scale("bedroom.png",1920,1080)
 
 
 default score=0
@@ -34,9 +38,9 @@ label start:
     show callista at right
     show amie at left
     a "Are you still studying?"
-    c "..."
+    c "..."#make this an option
     a "The library is almost closed you know"
-    c"..."
+    c"..."#make this an option
     a "We were going out to get some drinks-"
     c "I'll pass"
     a "alright then"
@@ -68,8 +72,35 @@ label start:
     narrator "The doctor hands her some liquid medicine"
     d "Use this to help with your heart"
     narrator "Callista nodded and took the medicine from the doctor before leaving the door"
+    hide callista with moveoutright
     hide bg hospital
-    show bg 
+    show bg bedroom
+    show callista at right
+    c"{i}Gosh I lost so much time just coming back from the hospital{/i}"
+    c"{i}Who even brought me to the hospital? I'll have to thank them{/i}"
+    narrator "Callista brushed off the though and tied up her hair, preparing to study late into the night"
+    narrator "She glanced over to the corner her desk that had the medicine she had been perscribed."
+    narrator "She uncapped it and took a dose of it before she began her studies"
+    hide callista
+    show bg empty
+    narrator"Time: 6.30 am"
+    show bg bedroom
+    show callista at left
+    narrator "Opening her eyes slowly, Callista saw a small little fairy in front of her eyes. The sight shocking enough for her to jolt back"
+    c "AGHHH WHAT THE HECK"
+    show lilith at right
+    l "Hellooo"
+    narrator "She had an overly sweet voice if you could it hear over Callista's attempts to shoo away the creature with a pillow"
+    c "What are you!"
+    l"If you stopped for a minute you would see that I am a fairy"
+    narrator "That had Callista cease her attacks and reach out in front of her, squeezing the little creature"
+    c "I must be hallucinating"
+    l"Hey! Hey! That hurts"
+    narrator"Callista let go of the fairy"
+    l"Darn, that really hurt. You know I'm here to help you"
+    c"Help me? Help me with what?"
+    narrator"The fairy rolled her eyes"
+
     
 
 
