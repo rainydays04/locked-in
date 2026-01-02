@@ -38,7 +38,7 @@ label start:
     a "We were going out to get some drinks-"
     c "I'll pass"
     a "alright then"
-    show amie moveoutright#im pretty sure this code is wrong
+    show amie with moveoutright
     c "{i}ugh... I'm getting dizzy{/i}"
     c "I can...sit up... longer-"
     hide callista
