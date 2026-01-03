@@ -23,7 +23,7 @@ image bg library = im.Scale("library.png",1920,1080)
 image bg empty = im.Scale("empty.png",1920,1080)
 image bg hospital = im.Scale("hospital.png",1920,1080)
 image bg bedroom = im.Scale("bedroom.png",1920,1080)
-image bg schoolOut = im.Scale("schoolOut.png",1920,1080)
+image bg school = im.Scale("school.png",1920,1080)
 
 
 default score=0
@@ -116,8 +116,8 @@ label start:
     narrator"Let the games begin"
     #show time and that its evening now and stuff like that
     #bell noises
-    show bg schoolOut
-    
+    show bg school
+
 
 
     
