@@ -17,11 +17,13 @@ image callista = im.Scale("callista.png",1000,1000)
 image amie = im.Scale("amie.png",1000,1000)
 image lilith = im.Scale("fairy.png",1000,1000)
 
+
 #background images
 image bg library = im.Scale("library.png",1920,1080)
 image bg empty = im.Scale("empty.png",1920,1080)
 image bg hospital = im.Scale("hospital.png",1920,1080)
 image bg bedroom = im.Scale("bedroom.png",1920,1080)
+image bg schoolOut = im.Scale("schoolOut.png",1920,1080)
 
 
 default score=0
@@ -101,8 +103,20 @@ label start:
     c"Help me? Help me with what?"
     narrator"The fairy rolled her eyes as if the answer was obvious"
     l"Helping you HAVE a life"
-    c""
-
+    c"That is absolute-"
+    l"ssshhhhhhhhhhhhh"
+    l"I know {w}I'm too kind"
+    narrator"Callista looked at the fairy incredulously"
+    l"From today on, I have arranged after-school plans for you. Hangouts, clubs,encounters and any other things of the like"
+    c "What if I just refuse?"
+    l"The there will be consequences"
+    hide lilith
+    hide callista
+    show bg empty
+    narrator"Let the games begin"
+    #show time and that its evening now and stuff like that
+    #bell noises
+    show bg schoolOut
     
 
 
