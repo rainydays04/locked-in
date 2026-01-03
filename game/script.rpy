@@ -114,8 +114,6 @@ label start:
     hide callista
     show bg empty
     narrator"Let the games begin"
-    #show time and that its evening now and stuff like that
-    #bell noises
     show bg schoolOut
     show callista
 
