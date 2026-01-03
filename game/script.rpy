@@ -117,6 +117,7 @@ label start:
     #show time and that its evening now and stuff like that
     #bell noises
     show bg schoolOut
+    
 
 
 
