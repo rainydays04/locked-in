@@ -114,7 +114,8 @@ label start:
     hide callista
     show bg empty
     narrator"Let the games begin"
-
+    show bg library
+    show callista at right
 
     
 
