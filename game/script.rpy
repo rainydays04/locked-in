@@ -110,11 +110,7 @@ label start:
     l"From today on, I have arranged after-school plans for you. Hangouts, clubs,encounters and any other things of the like"
     c "What if I just refuse?"
     l"The there will be consequences"
-    hide lilith
-    hide callista
-    show bg empty
-    narrator"Let the games begin"
-    jump day_1
+
     
     
 
