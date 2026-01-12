@@ -113,7 +113,7 @@ label start:
     hide lilith
     hide callista
     show bg empty
-    narrator"Let the games begin"
+    narrator"RAHHH"
     show bg library
     
     
