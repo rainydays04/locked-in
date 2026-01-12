@@ -112,12 +112,5 @@ label start:
     l"The there will be consequences"
     narrator"Callista checks "
     jump day_1
-    
-    
-
-    
-
-    return
 label day_1:
-    show bg bedroom
-    show callista at right
+    show bg library
