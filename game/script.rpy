@@ -12,10 +12,12 @@ define l = Character("Lilith")
 
 
 
+
 #character images
 image callista = im.Scale("callista.png",1000,1000)
 image amie = im.Scale("amie.png",1000,1000)
 image lilith = im.Scale("fairy.png",1000,1000)
+
 
 
 #background images
@@ -24,6 +26,10 @@ image bg empty = im.Scale("empty.png",1920,1080)
 image bg hospital = im.Scale("hospital.png",1920,1080)
 image bg bedroom = im.Scale("bedroom.png",1920,1080)
 image bg schoolOut = im.Scale("schoolOut.png",1920,1080)
+image bg sidewalk = im.Scale("sidewalk.png",1920,1080)
+
+#phone images
+image phone = im.Scale("phone.png",1000,1000)
 
 
 default score=0
@@ -32,6 +38,7 @@ default score=0
 
 label start:
     show bg empty
+    show phone
     narrator "The world values prestige"
     narrator "This world asks for those who can work endlessly"
     narrator "Anything in between is a waste, a distraction"
@@ -111,16 +118,20 @@ label start:
     c "What if I just refuse?"
     l"The there will be consequences"
     narrator"Callista checks  the time and shakes her head"
-    c"It's getting late, I'm probably hallucinating"
-    hide callista
-    hide fairy
-    show bg empty
-    narrator"Let the games begin"
+    c"It's too early, I'm probably hallucinating"
+    narrator"The fairy pulls her out of bed"
+    l"Oh no you don't. You have a whole day ahead of you to stay energized for"
+    narrator "Callista left the house with a fairy yapping annoyingly at her ear of which she tried to ignore"
     jump day_1
 
 label day_1:
-    show bg bedroom
+    show bg sidewalk
     show callista at right
-    c"If this code doesnt work i finna cry at 2 am in the morning"
+    narrator"As she walks down the street she gets a text from amie"
+    show
+
+
+
+    
 
     
