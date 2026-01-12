@@ -29,7 +29,7 @@ image bg schoolOut = im.Scale("schoolOut.png",1920,1080)
 image bg sidewalk = im.Scale("sidewalk.png",1920,1080)
 
 #phone images
-image phone = im.Scale("phone.png",1000,1000)
+image phone = im.Scale("phone.png",960,1080)
 
 
 default score=0
@@ -38,7 +38,7 @@ default score=0
 
 label start:
     show bg empty
-    show phone
+    
     narrator "The world values prestige"
     narrator "This world asks for those who can work endlessly"
     narrator "Anything in between is a waste, a distraction"
@@ -127,9 +127,23 @@ label start:
 label day_1:
     show bg sidewalk
     show callista at right
-    narrator"As she walks down the street she gets a text from amie"
-    show
-
+    narrator"As she walks down the street she gets a text from Amie"
+    #text showing about the club fair
+    show phone
+    c"Club fair?"
+    hide phone
+    c"I thought clubs were finalized for the year"
+    show lilith at left
+    l"Yes, but you only joined book club"
+    narrator"Callista swats off Lilith"
+    c"What does my scheduale matter to you, bug"
+    l"Ugh! I am not a bug. And your scheduale matters to me because I am trying to help you get out more"
+    c"I'm already in book club"
+    narrator"Liltih rolls her eyes"
+    c"We only have to meet once a month and I get a free book out of it too"
+    hide lilith
+    show bg front
+    
 
 
     
