@@ -110,7 +110,17 @@ label start:
     l"From today on, I have arranged after-school plans for you. Hangouts, clubs,encounters and any other things of the like"
     c "What if I just refuse?"
     l"The there will be consequences"
-    narrator"Callista checks "
+    narrator"Callista checks  the time and shakes her head"
+    c"It's getting late, I'm probably hallucinating"
+    hide callista
+    hide fairy
+    show bg empty
+    narrator"Let the games begin"
     jump day_1
+
 label day_1:
-    show bg library
+    show bg bedroom
+    show callista at right
+    c"If this code doesnt work i finna cry at 2 am in the morning"
+
+    
