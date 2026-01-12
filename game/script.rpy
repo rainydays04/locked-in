@@ -113,11 +113,14 @@ label start:
     hide lilith
     hide callista
     show bg empty
-    narrator"RAHHH"
-    show bg library
+    narrator"Let the games begin"
+    jump day_1
     
     
 
     
 
     return
+label day_1:
+    show bg bedroom
+    show callista at right
