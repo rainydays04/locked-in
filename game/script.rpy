@@ -27,12 +27,14 @@ image bg hospital = im.Scale("hospital.png",1920,1080)
 image bg bedroom = im.Scale("bedroom.png",1920,1080)
 image bg schoolOut = im.Scale("schoolOut.png",1920,1080)
 image bg sidewalk = im.Scale("sidewalk.png",1920,1080)
+image bg front = im.Scale("front.png",1920,1080)
 
 #phone images
 image phone = im.Scale("phone.png",960,1080)
 
 
 default score=0
+default club="none"
 
 # The game starts here.
 
@@ -147,6 +149,52 @@ label day_1:
     narrator"Lilith was trying to pass by, not planning to join a new clubs, but her new companion has other plans"
     show lilith with moveinleft
     l"Ok so here are the BEST clubs for you to join with how would"
+    narrator"The fairy shows three flyers: Robotics, Newpaper, and Gardening"
+    narrator"Callista looked incredulously"
+    c"And I have to choose one of these?"
+    l"You wanna find out happens if you don't abide?"
+    menu:
+        "Yes":
+            c"Try me"
+            narrator"Lilith covered Callista in sticky glitter"
+            c"PEH! What in the world?"
+            narrator"Several heads turned to stare at Callista"
+            c"Please, remove it"
+            l"Choose a club then"
+        "No":
+            c"I'd rather you just tell me"
+            narrator"Lilith rolled her eyes almost as if she was disappointed"
+            l"Well you would you enjoy having glitter stuck to you for 30 minutes to 3 hours"
+            c"NO!"
+            narrator"Several heads turned to stare at Callista to which she hid her face behind her hand"
+            c"Fine, I'll choose a stupid club"
+    menu:
+        "Robotics":
+            $ club=="robotics"
+            c"I'll join the robotics club"
+            l"Great! Let me show you where the club table is"
+        "Gardening":
+            $ club=="gardening"
+            c"I guess I'll join the gardening club"
+            l"Ooo getting some vitamin d, I see. I think the club table is around the back"
+        "Newspaper":
+            $ club=="newspaper"
+            c"The newspaper club seems fun I guess"
+            l"Makes sense, The club table is over there"
+    narrator"Lilith led Callista around the tables, trying to lead her to the club table, but she bumped into Amie"
+    show callista at right
+    show amie at left
+    hide lilith
+    a"Callista! You're already up, I expected you to take a bit off today after-"
+    c"I'm fine, besides, I have work to do"
+    a"Are you heading to the library again?"
+    c"No, I am actually joining a club"
+    narrator "Amie looked at her in suprise, a smile creeping onto her face"
+    a"Really? Not just like bookclub or something"
+    narrator"Callista shook her head"
+    a"That's... That's great Callista. Do you need me to help you find the table"
+    narrator"Callista looked around, trying to find Lilith, but she was no where to be found, so she accepted her friends's offer"
     
+
 
     
