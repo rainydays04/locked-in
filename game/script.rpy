@@ -143,9 +143,10 @@ label day_1:
     c"We only have to meet once a month and I get a free book out of it too"
     hide lilith
     show bg front
-    
-
-
+    #noises
+    narrator"Lilith was trying to pass by, not planning to join a new clubs, but her new companion has other plans"
+    show lilith with moveinleft
+    l"Ok so here are the BEST clubs for you to join with how would"
     
 
     
