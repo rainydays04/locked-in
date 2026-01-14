@@ -9,14 +9,17 @@ define a = Character("Amie")
 define c = Character("Callista")
 define d = Character("Doctor")
 define l = Character("Lilith")
+define g = Character("Grace")
 
 
-
+#audio
+define audio.schoolBell="schoolBell.mp3"
 
 #character images
 image callista = im.Scale("callista.png",1000,1000)
 image amie = im.Scale("amie.png",1000,1000)
-image lilith = im.Scale("fairy.png",1000,1000)
+image lilith = im.Scale("fairy.png",500,500)
+image grace = im.Scale("grace.png",1000,1000)
 
 
 
@@ -28,6 +31,7 @@ image bg bedroom = im.Scale("bedroom.png",1920,1080)
 image bg schoolOut = im.Scale("schoolOut.png",1920,1080)
 image bg sidewalk = im.Scale("sidewalk.png",1920,1080)
 image bg front = im.Scale("front.png",1920,1080)
+image bg classroom = im.Scale("classroom.png",1920,1080)
 
 #phone images
 image phone = im.Scale("phone.png",960,1080)
@@ -35,8 +39,16 @@ image phone = im.Scale("phone.png",960,1080)
 
 default score=0
 default club="none"
+default thing="none"
 
+
+#alignment for lilith
+transform topright:
+    xalign 1.0 yalign 0.0
+transform topleft:
+    xalign 1.0 yalign 0.0
 # The game starts here.
+
 
 label start:
     show bg empty
@@ -99,7 +111,7 @@ label start:
     show callista at left
     narrator "Opening her eyes slowly, Callista saw a small little fairy in front of her eyes. The sight shocking enough for her to jolt back"
     c "AGHHH WHAT THE HECK"
-    show lilith at right
+    show lilith at topright
     l "Hellooo"
     narrator "She had an overly sweet voice if you could it hear over Callista's attempts to shoo away the creature with a pillow"
     c "What are you!"
@@ -135,7 +147,7 @@ label day_1:
     c"Club fair?"
     hide phone
     c"I thought clubs were finalized for the year"
-    show lilith at left
+    show lilith at topleft
     l"Yes, but you only joined book club"
     narrator"Callista swats off Lilith"
     c"What does my scheduale matter to you, bug"
@@ -147,7 +159,7 @@ label day_1:
     show bg front
     #noises
     narrator"Lilith was trying to pass by, not planning to join a new clubs, but her new companion has other plans"
-    show lilith with moveinleft
+    show lilith with moveinleft 
     l"Ok so here are the BEST clubs for you to join with how would"
     narrator"The fairy shows three flyers: Robotics, Newpaper, and Gardening"
     narrator"Callista looked incredulously"
@@ -194,6 +206,95 @@ label day_1:
     narrator"Callista shook her head"
     a"That's... That's great Callista. Do you need me to help you find the table"
     narrator"Callista looked around, trying to find Lilith, but she was no where to be found, so she accepted her friends's offer"
+    hide amie
+    hide callista
+    show bg empty with fade
+    narrator"After signing up for her clubs, the two parted ways to go to their classrooms"
+    show bg classroom with fade
+    show callista at right
+    narrator"Callista was in the accelerated class, seperated from her only friend"
+    narrator"She hasn't made much of an effort to talk to others"
+    show lilith at topleft
+    narrator"Lilith peeked out of Callista's bag while her classmates were chattering about the clubs they signed up for"
+    l"You should try talking to them"
+    c"And who are you again to determine my social life?"
+    l"Forgot my name already?"
+    c"When you pulled that disappearing act on me earlier to something YOU dragged me into"
+    l"Aww so you care about me?"
+    menu:
+        "Yeah well...":
+            c"Well you seem to be attachde to me for some reason and I don't want to anger whatever sent you down"
+        "No":
+            c"Who are you again? I seem to suffering from amnesia"
+    narrator"Lilith rolled her eyes and flew about the classroom, scanning and listening to what her classmates were talking about"
+    hide lilith with moveoutleft
+    c"H-hey, get back here"
+    narrator"Callista's soft cries brought on the attention of her seatmate"
+    c"{i}Is she looking at me?{/i}"
+    show callista at right
+    show grace at left with moveinleft
+    g"Sorry, I just so rarely hear your voice, your head is always in your books and -"
+    narrator"Just hearing her talk was enough to make her head spin"
+    c"Yeah I just wanted to catch up on my classes"
+    g"Catch up? Gosh everyone is so lost in their heads"
+    g"Giving more and more of themselves and less time for themselves"
+    narrator"She lets out a wistful sigh"
+    c"Well, what would you do?"
+    narrator"She paused to give it some thought"
+    g"We're upperclassmen now, we have sooo many upperclassmen privileges"
+    g"Like uhh... leaving school early! Everyone in this class uses it as an extra study period or clubs while everyone else goes out"
+    g"Besides,"
+    g"If anyone should be worrying, it isn't you"
+    narrator"It has always annoyed Callista when people only saw her results, not her."
+    narrator"Even if she didn't get a good results people still halo effected her, like a loop of misunderstanding"
+    c"I got other stuff"
+    g"R-right! Oh, sorry I didn't mean to assume that you didn't have like other stuff going on"
+    g"Uhh, uh... So like, what are your hobbies?"
+    c"I-"
+    g"OMG wait no, I see you like always in the library. You've been reading much"
+    menu:
+        "Fantasy":
+                c"I like to escape every once in a while with a good fantasy books"
+                narrator"She looks up thoughtfully"
+                c"The princesses, the fights, the duals. They all are for something and have some kinda meaning"
+                g"...W-wow"
+                g"That's like..super deep"
+                c"Oh? I guess, but it's just what fantasy is for I guess"
+        "Romance":
+            c"Romance novels have always been of interest to me"
+            g"Ooo la la"
+            c"Hah..Yeah, swoony I know"
+            c"I think I was about 12 when I stumbled upon them in my sister's bedroom"
+            narrator"Callista's eyes gain a faraway look"
+            c"She used to spend her weekends in her reading nook, giggling at her books"
+            g"Aww, that's sooo sweet"
+        "Sci-Fi":
+            c"I have gotten piles and piles of Science-Fiction books"
+            c"I was researchng quantum physics for one class and I stumbled upon a good novel which led me down a rabbit hole"
+            g"Science-fiction you say? I'm going to a movie with that genre..uhh The Humanix?"
+            c"I love that book! I have a copy all worn out and bookmarked"
+            g"Maybe we could go together?"
+            menu:
+                "Sure why not":
+                    c"Sounds fun"
+                    narrator"The girl scribbles something down on a peice of paper and passes it to Callista"
+                    g"Here's my number. Oh, my name is Grace by the way"
+                    c"Callista"
+                "Oh I don't think...":
+                    c"Sorry, I dont think I can make-"
+                    narrator"A sudden poof of glitter covers Callista"
+                    c"Actually uh, yeah sounds great"
+                    narrator"The glitter disappears and the girl scribbles something down on a peice of paper and passes it to Callista"
+                    g"Here's my number. Oh, my name is Grace by the way"
+                    c"Callista"
+    hide grace
+    hide callista
+    play music "schoolBell.mp3"
+    show bg empty with fade
+
+
+
+    
     
 
 
