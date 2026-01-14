@@ -320,6 +320,12 @@ label day_1:
     hide callista
     hide lilith
     show bg empty with fade
+    if club=="robotics":
+        jump robotics_day1
+    return
+
+label robotics_day1:
+    
     
 
 
