@@ -289,7 +289,8 @@ label day_1:
                     c"Callista"
     hide grace
     hide callista
-    play music "schoolBell.mp3"
+    play music schoolBell
+    
     show bg empty with fade
 
 
