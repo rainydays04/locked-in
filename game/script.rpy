@@ -290,8 +290,36 @@ label day_1:
     hide grace
     hide callista
     play music schoolBell
-    
     show bg empty with fade
+    show bg classroom with fade
+    show callista at right
+    narrator"As Callista writes her notes, Lilith crawls out of her school bag"
+    show lilith with move in left at topleft
+    l"Seems like that went very well"
+    narrator"Callista loks around to see if anyone else see the little annoying fairy on her desl"
+    l"Tsk tsk"
+    l"No one but you can see and hear me"
+    c"Oh so you're just a figment of my imagination"
+    l"If I say yes, would you get at minimum 8 hours of sleep to get rid of me?"
+    menu:
+        "You're a nightmare":
+            c"Sleep would just induce nightmares of you"
+            l"Oh so you would dream of me? How sweet and so soon"
+        "That wouldn't work":
+            c"I think I tried enough things to know that wouldn't work"
+            l"So quick to give up"
+    narrator"Lilith streches and yawns"
+    l"You should go to the club meetings today"
+    c"But they aren't until next week"
+    l"Glitter?"
+    narrator"Callista tightens her hold around her pencil, biting her lower lip"
+    c"Fine"
+    narrator"Lilith smiles with satisfaction and climbs into Callista's bag to continue her nap"
+    hide callista
+    hide lilith
+    show bg empty with fade
+    
+
 
 
 
