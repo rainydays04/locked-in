@@ -20,6 +20,7 @@ image callista = im.Scale("callista.png",1000,1000)
 image amie = im.Scale("amie.png",1000,1000)
 image lilith = im.Scale("fairy.png",500,500)
 image grace = im.Scale("grace.png",1000,1000)
+image hannha = im.Scale("hannah.png",1000,1000)
 
 
 
@@ -32,6 +33,7 @@ image bg schoolOut = im.Scale("schoolOut.png",1920,1080)
 image bg sidewalk = im.Scale("sidewalk.png",1920,1080)
 image bg front = im.Scale("front.png",1920,1080)
 image bg classroom = im.Scale("classroom.png",1920,1080)
+image bg computerRoom = im.Scale("computer.png",1920,1080)
 
 #phone images
 image phone = im.Scale("phone.png",960,1080)
@@ -319,6 +321,7 @@ label day_1:
     hide lilith
     show bg empty with fade
     
+
 
 
 
