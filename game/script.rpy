@@ -11,6 +11,7 @@ define d = Character("Doctor")
 define l = Character("Lilith")
 define g = Character("Grace")
 define h = Character("Hannah")
+define an = Characyer("Andreas")
 
 
 #audio
@@ -35,7 +36,8 @@ image bg sidewalk = im.Scale("sidewalk.png",1920,1080)
 image bg front = im.Scale("front.png",1920,1080)
 image bg classroom = im.Scale("classroom.png",1920,1080)
 image bg computerRoom = im.Scale("computer.png",1920,1080)
-
+image bg newspaper = im.Scale("newspaper.png",1920,1080)
+image bg hallway = im.Scale("hallway.png",1920,1080)
 #phone images
 image phone = im.Scale("phone.png",960,1080)
 
@@ -323,6 +325,8 @@ label day_1:
     show bg empty with fade
     if club=="robotics":
         jump robotics_day1
+    elif club=="newspaper":
+        jump newspaper_day1
     return
 
 label robotics_day1:
@@ -395,7 +399,41 @@ label robotics_day1:
             narrator"Hannah turned the computer to Callista and began teaching her the program"
             narrator"Nothing else was said as they all continued working in silence, Hannah's voice the only noise in the room"
     narrator"The rest of the club followed in the same manner until the clock hit 5 o'clock"
+    hide hannah
+    hide callista
+    show bg empty with fade
 
+
+label newspaper_day1:
+    show bg hallway
+    show callista at left
+    show lilith at topright
+    l"This is one of THE best clubs to get into, I'm telling you"
+    l"It's on the same floor as the teacher's lounge, so all the students get snacks from there"
+    l"And it has the biggest club room"
+    c"Just because it's bigger does not make it a good club"
+    show bg newspaper
+    hide lilith with moveoutleft
+    narrator"There were about 12 students in attendence, most of them working on their papers and laptops"
+    narrator"At the front of the room was Andreas, talking to 2 seemingly new members"
+    narrator"Callista walked up to join them, Andreas' face lightening up seeing her"
+    an"Hi!, you must be Callista. I saw your name on the list and was so glad to see you there"
+    an"I'm Andreas, and I coordinate the Newspaper Club"
+    c"Nice to meet you, I'm excited to get started"
+    an"Well you don't have to wait to soon"
+    narrator"He points to the board where it has 3 groups written on it"
+    an"I can put each of you in one of these sections."
+    an"Section editors are allowed to basically write about any news topic so long as they do thorough research on it"
+    an"Reporters focus on writing about what's happening, school events and things of the like"
+    an"And lastly photography, which is going out and taking photos for school events, or maybe even compile photos you just want to share"
+    menu:
+        "Section Editors":
+            c"I could be section editor, I like doing research"
+            narrator"Andreas smiles and wrote her name on the board next to the other section editors"
+            #glitter her
+        "Reporters":
+            c""
+        "Photographers":
 
 
 
