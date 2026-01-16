@@ -23,6 +23,7 @@ image amie = im.Scale("amie.png",1000,1000)
 image lilith = im.Scale("fairy.png",500,500)
 image grace = im.Scale("grace.png",1000,1000)
 image hannah = im.Scale("hannah.png",1000,1000)
+image andreas = im.Scale("andreas.png",1000,1000)
 
 
 
@@ -417,6 +418,7 @@ label newspaper_day1:
     narrator"There were about 12 students in attendence, most of them working on their papers and laptops"
     narrator"At the front of the room was Andreas, talking to 2 seemingly new members"
     narrator"Callista walked up to join them, Andreas' face lightening up seeing her"
+    show andreas with moveinright at right
     an"Hi!, you must be Callista. I saw your name on the list and was so glad to see you there"
     an"I'm Andreas, and I coordinate the Newspaper Club"
     c"Nice to meet you, I'm excited to get started"
@@ -432,8 +434,46 @@ label newspaper_day1:
             narrator"Andreas smiles and wrote her name on the board next to the other section editors"
             #glitter her
         "Reporters":
-            c""
+            narrator"After considering it for a while, she decieded to step out of her comfort zone"
+            c"I could be a reporter"
+            an"Excellent, I'll give you my number since I especially like to write or helpn with that section"
+            an"It also might be tough for newcomers"
+            c"I appreiciate it"
         "Photographers":
+            c"I could be a photographer, albeit, I don't have much experience"
+            an"No worries, everything is a learning process"
+            narrator"He says with a toothy grin"
+            an"Here you even have your own camera provided by the school"
+            narrator"Andreas hands over a camera bag to her"
+            an"Keep it safe alright?"
+            c"Noted"
+    hide andreas with moveoutright
+    c"{i}He is quite talkative. Must be good when leading the club{/i}"
+    narrator"Callista spent the rest of the club period talking to the other club members and enjoying snacks"
+    hide callista
+    show bg empty with fade
+
+    
+    narrator"After clubs, Callista grabbed a the latest newspaper the club had published"
+    show bg hallway
+    show callista with moveinleft at left
+    c"Wow this is really good"
+    c"They have articles, sources, art, photography of sport and scenery around the town"
+    show andreas with moveinleft at left
+    an"I don't think that it's a good idea Miss. Hawkins"
+    narrator"Callista hid behind a pillar to listen in, unable to hear the other voice"
+    an"Yes I'm sure it would be useful, but I don't have the team to-"
+    an"..."
+    an "Yes,no of course. I understand. I think I'll be able to scrounge something up anyways"
+    an"Sorry Miss.Hawkins, I'll look into adding that as a column in the newspaper next month"
+    narrator"There were footsteps walking the other way and a soft groan from the adolescent from the other side of the pillar"
+    an"It's fine, I can add it in if need be"
+    hide andreas with moveoutright
+    c"Damn, seems like he has a lot on his plate"
+    
+
+
+
 
 
 
