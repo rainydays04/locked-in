@@ -24,6 +24,7 @@ image lilith = im.Scale("fairy.png",500,500)
 image grace = im.Scale("grace.png",1000,1000)
 image hannah = im.Scale("hannah.png",1000,1000)
 image andreas = im.Scale("andreas.png",1000,1000)
+image jason = im.Scale("jason.png",1000,1000)
 
 
 
@@ -39,6 +40,7 @@ image bg classroom = im.Scale("classroom.png",1920,1080)
 image bg computerRoom = im.Scale("computer.png",1920,1080)
 image bg newspaper = im.Scale("newspaper.png",1920,1080)
 image bg hallway = im.Scale("hallway.png",1920,1080)
+image bg gardening = im.Scale("gardening.png",1920,1080)
 #phone images
 image phone = im.Scale("phone.png",960,1080)
 
@@ -328,6 +330,8 @@ label day_1:
         jump robotics_day1
     elif club=="newspaper":
         jump newspaper_day1
+    else:
+        jump gardening_day1
     return
 
 label robotics_day1:
@@ -470,9 +474,17 @@ label newspaper_day1:
     an"It's fine, I can add it in if need be"
     hide andreas with moveoutright
     c"Damn, seems like he has a lot on his plate"
-    
+  
 
-
+label gardening_day1:
+    show bg gardening
+    show callista at right
+    narrator"The gardening club was behind the school, a few planting beds around"
+    narrator"Jason was tending to some flowers, lost in his work, a few following suit"
+    narrator"However, a majority of the members were occupied with doing nothing or playing around"
+    menu:
+        "Talk to the lazing students":
+        "Talk to Jaosn":
 
 
 
