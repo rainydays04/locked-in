@@ -26,6 +26,7 @@ image hannah = im.Scale("hannah.png",1000,1000)
 image andreas = im.Scale("andreas.png",1000,1000)
 image jason = im.Scale("jason.png",1000,1000)
 image twogirls = im.Scale("twogirls.png",1000,1000)
+image sisterphoto = im.Scale("sisterphoto.png",1000,1000)
 
 
 
@@ -640,7 +641,27 @@ label gardening_day1:
     hide callista
     hide lilith
     show bg empty with fade
-       
+    narrator"It was a long silent walk home after clubs"
+    show bg bedroom
+    show callista at right
+    c"How can someone have such disrespect for not only themselves but their passion?"
+    show lilith with moveinleft at topleft
+    l"Well some people don't have the guts"
+    c"Tsk tsk, sign of a weak heart"
+    l"Coming from the person who only joined clubs because I forced her to"
+    c"That's diff-"
+    narrator"Callista's eyes caught on a photo on her bedstand"
+    show sisterphoto
+    narrator"A photo of a toddler girl placing purple chrysanthemums "
+    c"It was for a reason..."
+    hide callista
+    hide lilith
+    hide callista
+    show bg empty with fade
+
+
+
+
 
 
 
