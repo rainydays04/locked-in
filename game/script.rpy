@@ -10,6 +10,7 @@ define c = Character("Callista")
 define d = Character("Doctor")
 define l = Character("Lilith")
 define g = Character("Grace")
+define h = Character("Hannah")
 
 
 #audio
@@ -20,7 +21,7 @@ image callista = im.Scale("callista.png",1000,1000)
 image amie = im.Scale("amie.png",1000,1000)
 image lilith = im.Scale("fairy.png",500,500)
 image grace = im.Scale("grace.png",1000,1000)
-image hannha = im.Scale("hannah.png",1000,1000)
+image hannah = im.Scale("hannah.png",1000,1000)
 
 
 
@@ -325,6 +326,80 @@ label day_1:
     return
 
 label robotics_day1:
+    show bg computerRoom
+    show hannah at left
+    narrator"The room was hidden somewhere on the second floor and there were only a handful members when she entered"
+    narrator"The club leader, Hannah, was alone at a table surrounded by parts, screws, and laptops"
+    narrator"On the other end of the table was a small group of students writing away in their notebooks"
+    menu:
+        "Looks a bit rough in here":
+            h"Oh so your the new member, here let me just set up a computer for you"
+            narrator"Hannah grabs a laptop and begins setting it up, ignoring Callista"
+        "Hi I'm Callista":
+            narrator"...No one responds"
+            menu:
+        "Anything I can do to help around here?":
+            c"Could I help out with anything?"
+            h"No no I got it"
+            narrator"Hannah doesn't even look up and then she realized she needs to set up a laptop for Callista"
+            h"Take a seat, I'll get this set up for you"
+    narrator"Lilith murmurs from Callista's bag"
+    l"Talk about controlling, maybe I should send one over for her"
+    narrator"The statement made Callista curious as to what she meant, but she didn't speak out loud due to their company"
+    menu:
+        "Sit with Hannah":
+            narrator"Callista took the seat near Hannah"
+            menu:
+            "Offer help":
+                c"Seriously I'd love to help with anything really"
+                h"It's fine, really fine, I'll get this set up for you soon"
+                narrator"Callista is suprised at her outburst and a tad bit concerned too, but just sits back next to Hannah quietly"
+                narrator"Hannah sets up a computer in front of Callista and begins teachering her the basics of the program"
+                narrator"Meanwhile the other members join them at the table to start working"
+                h"We are currently preparing for a showcase and then a copetition later on, so I'll help you keep up to pace with the rest of the team"
+                show lilith with moveinleft at topleft 
+                l"Doesn't look like they are working on whatever she said"
+                narrator"Nothing else was said as they all continued working in silence, Hannah's soft voice filling the room"
+            "Ask about the club"
+                c"So what are you guys working on right now?"
+                narrator"Hannah doesn't take her eyes off the screen as she types away at the computer"
+                h"We are uh... preparing for a showcase and then like a competition against other school"
+                c"Oh cool, what did you guys do last semester?"
+                narrator"Hannah paused and looked up at her, clearing her throat"
+                h"Well um... Nothing really, we just presented some battle bots"
+                c"Oh, I see"
+                narrator"Hannah turned the computer to Callista and began teaching her the program"
+                narrator"The other members filed over to work on their computers, none of them seemed to be working towards Hannah's itinerary though"
+            "Grab one of the computers":
+                narrator"Callista grabbed one of the computers that was in front of her with a video game project"
+                c"{i}Strange, thought this was a robotics club{/i}"
+                c"What is this?"
+                narrator"Hannah glanced over at the screen and let out a sigh"
+                h"Nothing, we should all be working on our projects for competitions and showcases right now"
+                narrator"She takes the computer bag and opens up a different software, the other members filed over to work on their computers, none of them seemed to be working towards Hannah's itinerary though"
+                narrator"Nothing else was said as they all continued working in silence, Hannah's soft voice filling the room"
+        "Sit with the other team members":
+            narrator"Callista sat with the other members, pulling up a chair"
+            c"So, whatcha guys doing?"
+            narrator"{i}Team member 1{/i}: Some video games"
+            narrator"{i}Team member 2{/i}: Yeah, we're planning something for our next project, but its on one of the computers Hannah is setting up"
+            c"What's the project?"
+            narrator"They all put a halt what they were doing and begin explaining each of their different projects"
+            c"Wow, these ideas seem so cool"
+            c"How come I've never seen your projects in the school newspaper? Its always competitions and showcases"
+            narrator"{i}Team member 1{/i}: Ugh, Hannah is insistent on these competitions and showcases"
+            narrator"{i}Team member 3{/i}: We can't really go against her since she gives us access to the computers"
+            narrator"They hold up their notebooks"
+            narrator"As they look up and see that Hannah has finished setting up the table with their computers"
+            narrator"They all walk towards the tables and whisper something about ignoring Hannah's instructions and working on their latest project"
+            narrator"Hannah turned the computer to Callista and began teaching her the program"
+            narrator"Nothing else was said as they all continued working in silence, Hannah's voice the only noise in the room"
+    narrator"The rest of the club followed in the same manner until the clock hit 5 o'clock"
+
+
+
+
+            
     
     
 
