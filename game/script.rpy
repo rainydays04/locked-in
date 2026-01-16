@@ -25,6 +25,7 @@ image grace = im.Scale("grace.png",1000,1000)
 image hannah = im.Scale("hannah.png",1000,1000)
 image andreas = im.Scale("andreas.png",1000,1000)
 image jason = im.Scale("jason.png",1000,1000)
+image twogirls = im.Scale("twogirls.png",1000,1000)
 
 
 
@@ -484,8 +485,162 @@ label gardening_day1:
     narrator"However, a majority of the members were occupied with doing nothing or playing around"
     menu:
         "Talk to the lazing students":
-        "Talk to Jaosn":
+            narrator"As you approach the lazing students, you find that they have no interst in talking to you so you end up talking to Jason"
+            show Jason with moveinleft at left 
+            narrator"He looks up and brushed his hands on his legs"
+            j"You must be Callista, I'm Jason, the club leader"
+            narrator"He takes of his glove and shakes her hand"
+            menu:
+                "I've always foudn gardening calming":
+                    c"I've always found gardening quite calming"
+                    j"Yeah, calming"
+                    narrator"Jason gains a bit of a faraway look before snapping back in the present"
+                    j"Most people join this club to get away from school responsibilites"
+                    j"Feel free to do whatever you want"
+                    c"{i}Whatever I want? He means like...plant anything I want, right? {/i}"
+                "Looks interesting":
+                    c"I have always been interested in gardening, but I don't think I have much a green thumb"
+                    j"Don't worry about it, you can really do what you like"
+            narrator"Callista looks at hime confused at this idea from him"
+            c"Are you sure you don't have any specific rules for where I'm suppose to plant stuff"
+            narrator"Jason simply shrugs and shakes his head"
+            narrator"He looks at the rest of the garden, Callista following his gaze"
+            narrator"The garden looks dishevled, like beauty was put there and an evil spirit took it over"
+            narrator"Two underclassmen girls are between the beds, picking dirt up and chucking it at each other"
+            menu:
+                "Tell them to stop":
+                    hide callista with moveoutright
+                    hide jason
+                    show twogirls at right
+                    show callista with moveinleft at left
+                    c"Hey! Stop that"
+                    narrator"The two girls halt their actions and stare at her"
+                    narrator"{i}Girl 1{/i}: Why? Jason allows us to do it"
+                    c"Jason might allow it, but I don't and mother nature surely doesnt either"
+                    narrator"She started to slowly cleaned up the mess and tended to the garden with her limited knowledge"
+                    c"You should be gentle with the garden, it could be beautiful you know"
+                    narrator"The girls join in and follow silently mimic her movements and soon enough the area is cleaned up"
+                    narrator"{i}Girl 2{/i}: That was kinda fun... We should try this next club time"
+                    hide twogirls with moveoutleft
+                    show jason with moveinleft at left
+                    j"That was amazing, I haven't seen them actually interacting with the gardening like that"
+                    j"You really didn't need to do that"
+                    menu:
+                        "Be gentle":
+                            c"You seemed annoyed, I wanted to help out in anyway I can"
+                            j"Thanks :)"
+                        "Lwk yell at him":
+                            c"No, I did have to. You have to"
+                            narrator"She gets closer and points a finger at his him "
+                            c"It is your responsibility"
+                            j"Yeah, that's why I don't force the other members to do anyting"
+                            narrator"Callista get upset at this"
+                            c"You let them in your club, no? You are the leader, you shouldn't let them treat you like that and nonetheless the garden"
+                            j"..."
+                            c"Any instructions?"
+                            j"..."
+                            c"Fine"
+                            hide callista with moveoutright
+                            hide jason
+                            show callista with moveinleft
+                            narrator"She walked over to a bench under a tree and began reading, feeling Lilith's glitter be cast upon her"
 
+                "Let them go":
+                    narrator"She silently watches the girls playing arounf with the dirt"
+                    narrator"Standing side by side, she could feel his unease, the clenching of his fists"
+                    c"No gonna do anything"
+                    j"mh.."
+                    j"Just do whatever. No one cares as you can see"
+                    hide jason with moveoutleft
+                    c"I guess I'll just walk around then"
+                    c"Oh...Hmm?"
+                    narrator"She looks at a flower bed of purple chrysanthemums"
+                    narrator"She gently strokes the flowers, barely perserved from other's destruction"
+                    show lilith with moveinright at topleft
+                    l"Here let me just"
+                    #show flower in her hair
+                    c"Thank you"
+                    #tears
+        "Talk to Jason":
+            show Jason with moveinleft at left 
+            narrator"He looks up and brushed his hands on his legs"
+            j"You must be Callista, I'm Jason, the club leader"
+            narrator"He takes of his glove and shakes her hand"
+            menu:
+                "I've always foudn gardening calming":
+                    c"I've always found gardening quite calming"
+                    j"Yeah, calming"
+                    narrator"Jason gains a bit of a faraway look before snapping back in the present"
+                    j"Most people join this club to get away from school responsibilites"
+                    j"Feel free to do whatever you want"
+                    c"{i}Whatever I want? He means like...plant anything I want, right? {/i}"
+                "Looks interesting":
+                    c"I have always been interested in gardening, but I don't think I have much a green thumb"
+                    j"Don't worry about it, you can really do what you like"
+            narrator"Callista looks at hime confused at this idea from him"
+            c"Are you sure you don't have any specific rules for where I'm suppose to plant stuff"
+            narrator"Jason simply shrugs and shakes his head"
+            narrator"He looks at the rest of the garden, Callista following his gaze"
+            narrator"The garden looks dishevled, like beauty was put there and an evil spirit took it over"
+            narrator"Two underclassmen girls are between the beds, picking dirt up and chucking it at each other"
+            menu:
+                "Tell them to stop":
+                    hide callista with moveoutright
+                    hide jason
+                    show twogirls at right
+                    show callista with moveinleft at left
+                    c"Hey! Stop that"
+                    narrator"The two girls halt their actions and stare at her"
+                    narrator"{i}Girl 1{/i}: Why? Jason allows us to do it"
+                    c"Jason might allow it, but I don't and mother nature surely doesnt either"
+                    narrator"She started to slowly cleaned up the mess and tended to the garden with her limited knowledge"
+                    c"You should be gentle with the garden, it could be beautiful you know"
+                    narrator"The girls join in and follow silently mimic her movements and soon enough the area is cleaned up"
+                    narrator"{i}Girl 2{/i}: That was kinda fun... We should try this next club time"
+                    hide twogirls with moveoutleft
+                    show jason with moveinleft at left
+                    j"That was amazing, I haven't seen them actually interacting with the gardening like that"
+                    j"You really didn't need to do that"
+                    menu:
+                        "Be gentle":
+                            c"You seemed annoyed, I wanted to help out in anyway I can"
+                            j"Thanks :)"
+                        "Lwk yell at him":
+                            c"No, I did have to. You have to"
+                            narrator"She gets closer and points a finger at his him "
+                            c"It is your responsibility"
+                            j"Yeah, that's why I don't force the other members to do anyting"
+                            narrator"Callista get upset at this"
+                            c"You let them in your club, no? You are the leader, you shouldn't let them treat you like that and nonetheless the garden"
+                            j"..."
+                            c"Any instructions?"
+                            j"..."
+                            c"Fine"
+                            hide callista with moveoutright
+                            hide jason
+                            show callista with moveinleft
+                            narrator"She walked over to a bench under a tree and began reading, feeling Lilith's glitter be cast upon her"
+
+                "Let them go":
+                    narrator"She silently watches the girls playing arounf with the dirt"
+                    narrator"Standing side by side, she could feel his unease, the clenching of his fists"
+                    c"No gonna do anything"
+                    j"mh.."
+                    j"Just do whatever. No one cares as you can see"
+                    hide jason with moveoutleft
+                    c"I guess I'll just walk around then"
+                    c"Oh...Hmm?"
+                    narrator"She looks at a flower bed of purple chrysanthemums"
+                    narrator"She gently strokes the flowers, barely perserved from other's destruction"
+                    show lilith with moveinright at topleft
+                    l"Here let me just"
+                    #show flower in her hair
+                    c"Thank you"
+                    #tears
+    hide callista
+    hide lilith
+    show bg empty with fade
+       
 
 
 
