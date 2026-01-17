@@ -304,7 +304,7 @@ label day_1:
     show bg classroom with fade
     show callista at right
     narrator"As Callista writes her notes, Lilith crawls out of her school bag"
-    show lilith with moveinleft at topleft
+    show lilith at topleft with moveinleft 
     l"Seems like that went very well"
     narrator"Callista loks around to see if anyone else see the little annoying fairy on her desl"
     l"Tsk tsk"
@@ -368,7 +368,7 @@ label robotics_day1:
                     narrator"Hannah sets up a computer in front of Callista and begins teachering her the basics of the program"
                     narrator"Meanwhile the other members join them at the table to start working"
                     h"We are currently preparing for a showcase and then a copetition later on, so I'll help you keep up to pace with the rest of the team"
-                    show lilith with moveinleft at topleft 
+                    show lilith at topleft  with moveinleft 
                     l"Doesn't look like they are working on whatever she said"
                     narrator"Nothing else was said as they all continued working in silence, Hannah's soft voice filling the room"
                 "Ask about the club":
@@ -424,7 +424,7 @@ label newspaper_day1:
     narrator"There were about 12 students in attendence, most of them working on their papers and laptops"
     narrator"At the front of the room was Andreas, talking to 2 seemingly new members"
     narrator"Callista walked up to join them, Andreas' face lightening up seeing her"
-    show andreas with moveinright at right
+    show andreas at right with moveinright 
     an"Hi!, you must be Callista. I saw your name on the list and was so glad to see you there"
     an"I'm Andreas, and I coordinate the Newspaper Club"
     c"Nice to meet you, I'm excited to get started"
@@ -462,10 +462,10 @@ label newspaper_day1:
     
     narrator"After clubs, Callista grabbed a the latest newspaper the club had published"
     show bg hallway
-    show callista with moveinleft at left
+    show callista at left with moveinleft 
     c"Wow this is really good"
     c"They have articles, sources, art, photography of sport and scenery around the town"
-    show andreas with moveinleft at left
+    show andreas at left with moveinleft 
     an"I don't think that it's a good idea Miss. Hawkins"
     narrator"Callista hid behind a pillar to listen in, unable to hear the other voice"
     an"Yes I'm sure it would be useful, but I don't have the team to-"
@@ -487,7 +487,7 @@ label gardening_day1:
     menu:
         "Talk to the lazing students":
             narrator"As you approach the lazing students, you find that they have no interst in talking to you so you end up talking to Jason"
-            show Jason with moveinleft at left 
+            show Jason at left  with moveinleft 
             narrator"He looks up and brushed his hands on his legs"
             j"You must be Callista, I'm Jason, the club leader"
             narrator"He takes of his glove and shakes her hand"
@@ -513,7 +513,7 @@ label gardening_day1:
                     hide callista with moveoutright
                     hide jason
                     show twogirls at right
-                    show callista with moveinleft at left
+                    show callista at left with moveinleft 
                     c"Hey! Stop that"
                     narrator"The two girls halt their actions and stare at her"
                     narrator"{i}Girl 1{/i}: Why? Jason allows us to do it"
@@ -523,7 +523,7 @@ label gardening_day1:
                     narrator"The girls join in and follow silently mimic her movements and soon enough the area is cleaned up"
                     narrator"{i}Girl 2{/i}: That was kinda fun... We should try this next club time"
                     hide twogirls with moveoutleft
-                    show jason with moveinleft at left
+                    show jason  at left with moveinleft
                     j"That was amazing, I haven't seen them actually interacting with the gardening like that"
                     j"You really didn't need to do that"
                     menu:
@@ -557,7 +557,7 @@ label gardening_day1:
                     c"Oh...Hmm?"
                     narrator"She looks at a flower bed of purple chrysanthemums"
                     narrator"She gently strokes the flowers, barely perserved from other's destruction"
-                    show lilith with moveinright at topleft
+                    show lilith at topleft with moveinright 
                     l"Here let me just"
                     #show flower in her hair
                     c"Thank you"
@@ -589,7 +589,7 @@ label gardening_day1:
                     hide callista with moveoutright
                     hide jason
                     show twogirls at right
-                    show callista with moveinleft at left
+                    show callista at left with moveinleft 
                     c"Hey! Stop that"
                     narrator"The two girls halt their actions and stare at her"
                     narrator"{i}Girl 1{/i}: Why? Jason allows us to do it"
@@ -599,7 +599,7 @@ label gardening_day1:
                     narrator"The girls join in and follow silently mimic her movements and soon enough the area is cleaned up"
                     narrator"{i}Girl 2{/i}: That was kinda fun... We should try this next club time"
                     hide twogirls with moveoutleft
-                    show jason with moveinleft at left
+                    show jason at left with moveinleft 
                     j"That was amazing, I haven't seen them actually interacting with the gardening like that"
                     j"You really didn't need to do that"
                     menu:
@@ -633,7 +633,7 @@ label gardening_day1:
                     c"Oh...Hmm?"
                     narrator"She looks at a flower bed of purple chrysanthemums"
                     narrator"She gently strokes the flowers, barely perserved from other's destruction"
-                    show lilith with moveinright at topleft
+                    show lilith at topleft with moveinright 
                     l"Here let me just"
                     #show flower in her hair
                     c"Thank you"
@@ -645,7 +645,7 @@ label gardening_day1:
     show bg bedroom
     show callista at right
     c"How can someone have such disrespect for not only themselves but their passion?"
-    show lilith with moveinleft at topleft
+    show lilith at topleft with moveinleft 
     l"Well some people don't have the guts"
     c"Tsk tsk, sign of a weak heart"
     l"Coming from the person who only joined clubs because I forced her to"
