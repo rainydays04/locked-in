@@ -11,7 +11,7 @@ define d = Character("Doctor")
 define l = Character("Lilith")
 define g = Character("Grace")
 define h = Character("Hannah")
-define an = Characyer("Andreas")
+define an = Character("Andreas")
 
 
 #audio
@@ -563,7 +563,7 @@ label gardening_day1:
                     c"Thank you"
                     #tears
         "Talk to Jason":
-            show Jason with moveinleft at left 
+            show Jason at left  with moveinleft 
             narrator"He looks up and brushed his hands on his legs"
             j"You must be Callista, I'm Jason, the club leader"
             narrator"He takes of his glove and shakes her hand"
