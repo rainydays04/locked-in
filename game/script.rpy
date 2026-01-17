@@ -304,7 +304,7 @@ label day_1:
     show bg classroom with fade
     show callista at right
     narrator"As Callista writes her notes, Lilith crawls out of her school bag"
-    show lilith with move in left at topleft
+    show lilith with moveinleft at topleft
     l"Seems like that went very well"
     narrator"Callista loks around to see if anyone else see the little annoying fairy on her desl"
     l"Tsk tsk"
@@ -348,7 +348,7 @@ label robotics_day1:
             narrator"Hannah grabs a laptop and begins setting it up, ignoring Callista"
         "Hi I'm Callista":
             narrator"...No one responds"
-            menu:
+        
         "Anything I can do to help around here?":
             c"Could I help out with anything?"
             h"No no I got it"
@@ -361,34 +361,34 @@ label robotics_day1:
         "Sit with Hannah":
             narrator"Callista took the seat near Hannah"
             menu:
-            "Offer help":
-                c"Seriously I'd love to help with anything really"
-                h"It's fine, really fine, I'll get this set up for you soon"
-                narrator"Callista is suprised at her outburst and a tad bit concerned too, but just sits back next to Hannah quietly"
-                narrator"Hannah sets up a computer in front of Callista and begins teachering her the basics of the program"
-                narrator"Meanwhile the other members join them at the table to start working"
-                h"We are currently preparing for a showcase and then a copetition later on, so I'll help you keep up to pace with the rest of the team"
-                show lilith with moveinleft at topleft 
-                l"Doesn't look like they are working on whatever she said"
-                narrator"Nothing else was said as they all continued working in silence, Hannah's soft voice filling the room"
-            "Ask about the club"
-                c"So what are you guys working on right now?"
-                narrator"Hannah doesn't take her eyes off the screen as she types away at the computer"
-                h"We are uh... preparing for a showcase and then like a competition against other school"
-                c"Oh cool, what did you guys do last semester?"
-                narrator"Hannah paused and looked up at her, clearing her throat"
-                h"Well um... Nothing really, we just presented some battle bots"
-                c"Oh, I see"
-                narrator"Hannah turned the computer to Callista and began teaching her the program"
-                narrator"The other members filed over to work on their computers, none of them seemed to be working towards Hannah's itinerary though"
-            "Grab one of the computers":
-                narrator"Callista grabbed one of the computers that was in front of her with a video game project"
-                c"{i}Strange, thought this was a robotics club{/i}"
-                c"What is this?"
-                narrator"Hannah glanced over at the screen and let out a sigh"
-                h"Nothing, we should all be working on our projects for competitions and showcases right now"
-                narrator"She takes the computer bag and opens up a different software, the other members filed over to work on their computers, none of them seemed to be working towards Hannah's itinerary though"
-                narrator"Nothing else was said as they all continued working in silence, Hannah's soft voice filling the room"
+                "Offer help":
+                    c"Seriously I'd love to help with anything really"
+                    h"It's fine, really fine, I'll get this set up for you soon"
+                    narrator"Callista is suprised at her outburst and a tad bit concerned too, but just sits back next to Hannah quietly"
+                    narrator"Hannah sets up a computer in front of Callista and begins teachering her the basics of the program"
+                    narrator"Meanwhile the other members join them at the table to start working"
+                    h"We are currently preparing for a showcase and then a copetition later on, so I'll help you keep up to pace with the rest of the team"
+                    show lilith with moveinleft at topleft 
+                    l"Doesn't look like they are working on whatever she said"
+                    narrator"Nothing else was said as they all continued working in silence, Hannah's soft voice filling the room"
+                "Ask about the club":
+                    c"So what are you guys working on right now?"
+                    narrator"Hannah doesn't take her eyes off the screen as she types away at the computer"
+                    h"We are uh... preparing for a showcase and then like a competition against other school"
+                    c"Oh cool, what did you guys do last semester?"
+                    narrator"Hannah paused and looked up at her, clearing her throat"
+                    h"Well um... Nothing really, we just presented some battle bots"
+                    c"Oh, I see"
+                    narrator"Hannah turned the computer to Callista and began teaching her the program"
+                    narrator"The other members filed over to work on their computers, none of them seemed to be working towards Hannah's itinerary though"
+                "Grab one of the computers":
+                    narrator"Callista grabbed one of the computers that was in front of her with a video game project"
+                    c"{i}Strange, thought this was a robotics club{/i}"
+                    c"What is this?"
+                    narrator"Hannah glanced over at the screen and let out a sigh"
+                    h"Nothing, we should all be working on our projects for competitions and showcases right now"
+                    narrator"She takes the computer bag and opens up a different software, the other members filed over to work on their computers, none of them seemed to be working towards Hannah's itinerary though"
+                    narrator"Nothing else was said as they all continued working in silence, Hannah's soft voice filling the room"
         "Sit with the other team members":
             narrator"Callista sat with the other members, pulling up a chair"
             c"So, whatcha guys doing?"
