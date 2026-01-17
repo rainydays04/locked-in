@@ -300,6 +300,7 @@ label day_1:
     hide grace
     hide callista
     play music schoolBell
+    stop music
     show bg empty with fade
     show bg classroom with fade
     show callista at right
