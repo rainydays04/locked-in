@@ -12,7 +12,25 @@ define l = Character("Lilith")
 define g = Character("Grace")
 define h = Character("Hannah")
 define an = Character("Andreas")
+define j = Character("Jason")
+define n_nvl = Character("Callisra", kind=nvl, image="nighten", callback=Phone_SendSound)
+define a_nvl = Character("Amie", kind=nvl, callback=Phone_ReceiveSound)
+define g_nvl = Character("Grace", kind=nvl, callback=Phone_ReceiveSound)
 
+define config.adv_nvl_transition = None
+define config.nvl_adv_transition = Dissolve(0.3)
+
+
+
+#phine demo
+define n = Character("Nighten", image="nighten")
+
+# NVL characters are used for the phone texting
+define n_nvl = Character("Nighten", kind=nvl, image="nighten", callback=Phone_SendSound)
+define e_nvl = Character("Eileen", kind=nvl, callback=Phone_ReceiveSound)
+
+define config.adv_nvl_transition = None
+define config.nvl_adv_transition = Dissolve(0.3)
 
 #audio
 define audio.schoolBell="schoolBell.mp3"
@@ -62,7 +80,10 @@ transform topleft:
 
 label start:
     show bg empty
-    
+    menu:
+        "Go":
+            jump morning_2
+
     narrator "The world values prestige"
     narrator "This world asks for those who can work endlessly"
     narrator "Anything in between is a waste, a distraction"
@@ -410,6 +431,7 @@ label robotics_day1:
     hide hannah
     hide callista
     show bg empty with fade
+    jump morning_2
 
 
 label newspaper_day1:
@@ -477,6 +499,7 @@ label newspaper_day1:
     an"It's fine, I can add it in if need be"
     hide andreas with moveoutright
     c"Damn, seems like he has a lot on his plate"
+    jump morning_2
   
 
 label gardening_day1:
@@ -488,7 +511,7 @@ label gardening_day1:
     menu:
         "Talk to the lazing students":
             narrator"As you approach the lazing students, you find that they have no interst in talking to you so you end up talking to Jason"
-            show Jason at left  with moveinleft 
+            show jason at left  with moveinleft 
             narrator"He looks up and brushed his hands on his legs"
             j"You must be Callista, I'm Jason, the club leader"
             narrator"He takes of his glove and shakes her hand"
@@ -564,7 +587,7 @@ label gardening_day1:
                     c"Thank you"
                     #tears
         "Talk to Jason":
-            show Jason at left  with moveinleft 
+            show jason at left  with moveinleft 
             narrator"He looks up and brushed his hands on his legs"
             j"You must be Callista, I'm Jason, the club leader"
             narrator"He takes of his glove and shakes her hand"
@@ -657,8 +680,32 @@ label gardening_day1:
     c"It was for a reason..."
     hide callista
     hide lilith
-    hide callista
+    hide sisterphoto
     show bg empty with fade
+    jump morning_2
+
+label morning_2:
+    show bg bedroom
+    show callista at left
+    narrator"Callista woke up not to her alarm but to being spam texted"
+    c"Who the hell-"
+    show callista:
+        ease 0.5 xalign 0.7 
+    nvl_narrator "Chat with Amie"
+    a_nvl"Dude, where have you been?"
+    a_nvl"You didn't answer your texts all night last night"
+    a_nvl"Are you alr?"
+    menu:
+        "Yeah I was doing some club stuff":
+            n_nvl"Yeah I was just doing some club stuff"
+            a_nvl"Oh how was it"
+            n_nvl"Pretty alr"
+        "I fell asleep":
+            n_nvl"Sorry I fell asleep early"
+            a_nvl"Oh that's alr"
+    narrator"She went to check her texts for more stuff"
+    g_nvl"Grace test"
+    
 
 
 
