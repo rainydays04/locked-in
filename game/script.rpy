@@ -80,9 +80,6 @@ transform topleft:
 
 label start:
     show bg empty
-    menu:
-        "Go":
-            jump morning_2
 
     narrator "The world values prestige"
     narrator "This world asks for those who can work endlessly"
@@ -173,8 +170,11 @@ label day_1:
     show bg sidewalk
     show callista at right
     narrator"As she walks down the street she gets a text from Amie"
-    #text showing about the club fair
-    show phone
+    show callista:
+        ease 0.5 xalign 0.7 
+    nvl_narrator"You are now chatting with Amie"
+    a_nvl"Hey, don't forget there is the semester club fair."
+    a_nvl"It'll be in front of the school gates once you get there"
     c"Club fair?"
     hide phone
     c"I thought clubs were finalized for the year"
