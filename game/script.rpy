@@ -13,7 +13,7 @@ define g = Character("Grace")
 define h = Character("Hannah")
 define an = Character("Andreas")
 define j = Character("Jason")
-define n_nvl = Character("Callisra", kind=nvl, image="nighten", callback=Phone_SendSound)
+define n_nvl = Character("Callista", kind=nvl, image="nighten", callback=Phone_SendSound)
 define a_nvl = Character("Amie", kind=nvl, callback=Phone_ReceiveSound)
 define g_nvl = Character("Grace", kind=nvl, callback=Phone_ReceiveSound)
 
@@ -704,7 +704,7 @@ label morning_2:
             n_nvl"Sorry I fell asleep early"
             a_nvl"Oh that's alr"
     narrator"She went to check her texts for more stuff"
-    g_nvl"Grace test"
+    nvl_narrator"Grace test"
     
 
 
