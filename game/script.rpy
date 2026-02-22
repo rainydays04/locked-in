@@ -61,6 +61,7 @@ image bg computerRoom = im.Scale("computer.png",1920,1080)
 image bg newspaper = im.Scale("newspaper.png",1920,1080)
 image bg hallway = im.Scale("hallway.png",1920,1080)
 image bg gardening = im.Scale("gardening.png",1920,1080)
+image bg cafe=im.Scale("cafe.png",1920, 1080)
 #phone images
 image phone = im.Scale("phone.png",960,1080)
 
@@ -704,7 +705,77 @@ label morning_2:
             n_nvl"Sorry I fell asleep early"
             a_nvl"Oh that's alr"
     narrator"She went to check her texts for more stuff"
-    nvl_narrator"Grace test"
+    nvl_narrator"You are now texting Grace"
+    g_nvl"Heyyyy"
+    g_nvl"Omg clubs was soooo fun"
+    g_nvl"I made like this art thing, I'll show you later"
+    g_nvl"Wanna meet up or something for breakfast?"
+    menu:
+        "Yes":
+            c_nvl"Not sure"
+            g_nvl"It'll be worth it, cmon, its a new sweet bread place"
+            c_nvl"Fine, I'll meet you there"
+            jump cafe_1
+        "No":
+            c_nvl"Maybe not today"
+            g_nvl"Sure thing, Ill bring you some anwyays thooo"
+            jump argument
+
+label cafe:
+    hide callista
+    hide lilith
+    show bg cafe
+    show grace at left
+    show callista at right
+    g "Hey! Wow, I didn't think you would get here so quickly"
+    c"I usually wake up early, so not a big deal"
+    g"Really? After the first day of clubs I get really tired the next day"
+    g"Speaking of which, how were clubs"
+    c"Oh well..."
+    if club=="robotics":
+        c"The robotics club is messed up yk?"
+        c"All the members are working on a totally seperate project then the leader, Hannah"
+        c"And Hannah seems to be like... immensley stressed"
+        g"Oh yeah Hannah has always been that way"
+        g"Back in like 7th grade, She had a total breakdown in the middle of class"
+        c"Oh that sounds horrible"
+        g"Yeah, over two missed questions on a pop quiz"
+        c"I never heard of that"
+        g"Well, you've in her class for like...forever"
+        narrator"Callista thought about how she had similar moments to that growing up"
+        c"{i}gosh...maybe I we could help each other with that{/i}"
+        g"Maybe with you on the team, you all can really get something done this year"
+        c"Yeah, maybe..."
+    elif club=="newspaper":
+        c"The club itself is amazing like, it is amazingly organized and all"
+        c"But I dunno, the leader seems to be having problems with the teachers"
+        g"Andreas? Oh he has always been like such a people pleaser growing up"
+        g"He used to like take EVERY SINGLE OPINION about the newspaper and implement it. It was a total mess"
+        g"He even did most of the work himself because no one wanted to do all of that"
+        g"Then he implemented a system, so that everyone was still able to enjoy their work and the newspaper"
+        c"So... you think somthing similar is happening now?"
+        g"I would not put it above him to change the newspaper just to fit one person's view"      
+    else:
+        narrator"She groans and rolls her eyes"
+        c"The gardening club is in total disarray"
+        c"There are people just mess up the garden, but Jason seems passionate about what he does but... idk"
+        g"Oh yeah, he is a cool guy though"
+        g"He was a jack of all trade back in grade school, yk? Always trying out new things"
+        g"He wasn't the best at any of them"
+        c"He seems really into gardening though, like beyond average"
+        g"Enough to protect his garden?"
+        narrator"Callista shrugged"
+    narrator"The two partways to get to school"
+    jump argument
+
+
+label argument:
+    hide callista
+    hide grace
+    show bg hallway
+
+
+
     
 
 
