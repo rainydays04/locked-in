@@ -83,7 +83,7 @@ label start:
     show bg empty
     menu:
         "jumP":
-            jump argument
+            jump cafe_1
         "no":
             c"ok"
     narrator "The world values prestige"
@@ -729,8 +729,8 @@ label cafe_1:
     hide callista
     hide lilith
     show bg cafe
-    show grace with moveinleft at left 
-    show callista with moveinright at rights
+    show grace at left with moveinleft
+    show callista at right with moveinright
     g "Hey! Wow, I didn't think you would get here so quickly"
     c"I usually wake up early, so not a big deal"
     g"Really? After the first day of clubs I get really tired the next day"
@@ -774,12 +774,7 @@ label cafe_1:
 
 
 label argument:
-    hide callista
-    hide grace
     show bg hallway
-    show callista at left
-    show andreas at center
-    show Hannah at right
 
 
 
