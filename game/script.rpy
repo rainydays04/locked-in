@@ -712,12 +712,12 @@ label morning_2:
     g_nvl"Wanna meet up or something for breakfast?"
     menu:
         "Yes":
-            c_nvl"Not sure"
+            n_nvl"Not sure"
             g_nvl"It'll be worth it, cmon, its a new sweet bread place"
             c_nvl"Fine, I'll meet you there"
             jump cafe_1
         "No":
-            c_nvl"Maybe not today"
+            n_nvl"Maybe not today"
             g_nvl"Sure thing, Ill bring you some anwyays thooo"
             jump argument
 
