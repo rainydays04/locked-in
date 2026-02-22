@@ -1,6 +1,6 @@
 ﻿# The script of the game goes in this file.
 
-# Declare characters used by this game. The color argument colorizes the
+# Declare cracters used by this game. The color argument colorizes the
 # name of the character.
 
 
@@ -81,7 +81,11 @@ transform topleft:
 
 label start:
     show bg empty
-
+    menu:
+        "jumP":
+            jump argument
+        "no":
+            c"ok"
     narrator "The world values prestige"
     narrator "This world asks for those who can work endlessly"
     narrator "Anything in between is a waste, a distraction"
@@ -714,19 +718,19 @@ label morning_2:
         "Yes":
             n_nvl"Not sure"
             g_nvl"It'll be worth it, cmon, its a new sweet bread place"
-            c_nvl"Fine, I'll meet you there"
+            n_nvl"Fine, I'll meet you there"
             jump cafe_1
         "No":
             n_nvl"Maybe not today"
             g_nvl"Sure thing, Ill bring you some anwyays thooo"
             jump argument
 
-label cafe:
+label cafe_1:
     hide callista
     hide lilith
     show bg cafe
-    show grace at left
-    show callista at right
+    show grace with moveinleft at left 
+    show callista with moveinright at rights
     g "Hey! Wow, I didn't think you would get here so quickly"
     c"I usually wake up early, so not a big deal"
     g"Really? After the first day of clubs I get really tired the next day"
@@ -773,6 +777,11 @@ label argument:
     hide callista
     hide grace
     show bg hallway
+    show callista at left
+    show andreas at center
+    show Hannah at right
+
+
 
 
 
