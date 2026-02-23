@@ -776,13 +776,10 @@ label cafe_1:
 label argument:
     hide callista
     show bg hallway
-    show callista at left
-    show lilith at right
-
-    l "So you're just going to ignore what happened?"
-    c "I’m not ignoring it!"
-    c "I just think you're overreacting."
-
+    show callista at left with moveinleft
+    show andreas at center
+    show  hannah at right
+    an"position test"
     return
 
 
