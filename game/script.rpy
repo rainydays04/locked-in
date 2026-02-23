@@ -772,9 +772,10 @@ label cafe_1:
     narrator"The two partways to get to school"
     jump argument
 
-
 label argument:
     show bg hallway
+    
+
 
 
 
