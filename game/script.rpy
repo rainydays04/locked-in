@@ -771,13 +771,19 @@ label cafe_1:
         narrator"Callista shrugged"
     narrator"The two partways to get to school"
     jump argument
-    return
+   
 
 label argument:
     hide callista
     show bg hallway
-    return
+    show callista at left
+    show lilith at right
 
+    l "So you're just going to ignore what happened?"
+    c "I’m not ignoring it!"
+    c "I just think you're overreacting."
+
+    return
 
 
 
