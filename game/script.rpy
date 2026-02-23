@@ -776,6 +776,7 @@ label cafe_1:
 label argument:
     hide callista
     show bg hallway
+    return
 
 
 
