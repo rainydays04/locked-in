@@ -771,10 +771,11 @@ label cafe_1:
         narrator"Callista shrugged"
     narrator"The two partways to get to school"
     jump argument
+    return
 
 label argument:
+    hide callista
     show bg hallway
-    
 
 
 
