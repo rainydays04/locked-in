@@ -16,7 +16,6 @@ define j = Character("Jason")
 define n_nvl = Character("Callista", kind=nvl, image="nighten", callback=Phone_SendSound)
 define a_nvl = Character("Amie", kind=nvl, callback=Phone_ReceiveSound)
 define g_nvl = Character("Grace", kind=nvl, callback=Phone_ReceiveSound)
-
 define config.adv_nvl_transition = None
 define config.nvl_adv_transition = Dissolve(0.3)
 
@@ -69,6 +68,7 @@ image phone = im.Scale("phone.png",960,1080)
 default score=0
 default club="none"
 default thing="none"
+default an_status="none"
 
 
 #alignment for lilith
@@ -727,6 +727,7 @@ label morning_2:
 
 label cafe_1:
     hide callista
+    hide grace
     hide lilith
     show bg cafe
     show grace at left with moveinleft
@@ -776,10 +777,104 @@ label cafe_1:
 label argument:
     hide callista
     show bg hallway
-    show callista at left with moveinleft
-    show andreas at center
-    show  hannah at right
-    an"position test"
+    narrator"When Callista enters the school, she sees two arguing figures in the hallway"
+    if club=="robotics" or "gardening":
+        show jason at left 
+        show hannah at right
+        h"Your club is stealing my members"
+        an"Maybe if you actually listened to the members of your club, then they would stay"
+        h"oh and let my club become whatever zoo, yours have become?"
+        an"At least we enjoy what we are doing"
+        h"You seem miserable anytime you speak to your members"
+        an"And you are?"
+        narrator"A silence falls over the two as they feel a gaze upon them, Callista"
+        if club=="robotics":
+            narrator"Hannah waves over Callista"
+            h"This is our new recruit Callista"
+            c"Uh...hi"
+            h"How about you tell Jason over here how you feel about the club"
+            c"Well uh, I dunno, people aren't really focused in your club"
+            h"I- well, it's because I have to set up the program and -"
+            c"No, it's not because of the program set up. Everyone is getting projects done, just not your assigned ones"
+            h"What do you mean?"
+            c"I don't think you should be asking me"
+            c"The team has really been creating some amazing stuff recently"
+            c"Maybe you don't have to have control over every detail of the project, just let the flow happen"
+            h"Your right, maybe I should listen to you guys more"
+            narrator"Hannah looks over at Jason"
+            j"I am always here to help you you know"
+            h"I know, and this goes both ways you know, I'll help you out with the garden"
+        else:
+            narrator"Jason smiles kindly at Callista and motions for her to come over"
+            an"Hannah, this os one of the newer club members, Callista"
+            h"Oh yeah, I've heard of you before around. You're one of the top on the school roster"
+            c"Oh yeah"
+            j"Callista, care to share some thoughts about the club? Like how we actually let our members do what they want"
+            c"I mean, yeah the members get to do what they want, but it doesn't do much for the garden. It is in full disarray"
+            j"Well a garden can be replaced-"
+            c"Isn't that all you've been trying to do? Restore the garden"
+            j"Well yes, but it's just a garden"
+            h"So it's 'just a garden' now, is it? You know that isn't true"
+            j"..."
+            j"Look, I'm sorry"
+            j"I'll try to get the garden back to its former glory or something, alright?"
+            h"That isn't the point, you are suppose to have your members help out with it"
+            j"I-i'll try, I will"
+        narrator"The argument seems to have been tamped down for the time being so Callista walks away to get to class"
+        hide jason
+        hide hannah
+        show callista at left
+        narrator"As Callista is walking to class, she bumps into someone"
+        show andreas at right
+        c"Oh, sorry"
+        an"Oh hey, don't worry about it"
+        an"If anything I should be thanking you"
+        c"Thanking me? Why is that?"
+        an"I have been needing to interview those two for a while for the school newspaper, but they kept bickering"
+        c"Why didn't you just break it up, or wait later?"
+        an"I didn't want to intrude, but I'm also on a time crunch"
+        c"Oh, your part of newspaper club?"
+        an"Leader of it actually. I'm Andreas"
+        c"Callista"
+        an"Hey, could I get your opinion for a peice over brunch over the weekend?"
+        menu:
+            "Sure, why not":
+
+                c"Yeah, I'm free this weekend"
+                an"Nice, here is my number"
+                $ an_status=="brunch"
+                narrator"The two of them exchange phone numbers and parted ways for class"
+            "Sorry...":
+                c"Sorry, I am not avalib-"
+                narrator"Callista suddenly feels glitter across her body and begins doing that like itchy dance"
+                an"Are you alright?"
+                c"Yeah, just dry skin from the cold air"
+                an"Oh here use some of my lotion"
+                narrator"Callista takes the lotion and runs off"
+    else:
+        show callista at left
+        show andreas at right
+        an"Those two have been fighting all morning"
+        narrator"Callista looks up at Andreas, he looked tired"
+        c"Are you alright?"
+        an"I just need to collect data from these two for an article im writing"
+        menu:
+            "The one the teacher asked?":
+                c"The article your writing, or the one the teacher asked you to right?"
+                narrator"He looked at her a bit suprised"
+                an"How do you know about that"
+                c"I heard you talking when I was leaving school yesterday"
+            "Oh, what is it about?":
+                an"It's an article about the benefits about clubs and stuff"
+                narrator"Callista raises an eyebrow"
+                c"That isn't much like what the newspaper usually posts"
+                narrator"Andreas scratched the back of his neck awkwardly"
+                an"The teacher asked me to do this uh...article"
+        c"Look, do you even care about this article"
+        narrator"Andreas shrugged"
+        an"I dunno, it feels wrong to go against what she says"
+        c"Yeah but nothing really comes out of it, nothing will happen if you DO {i}disobey{/i} her"
+        
     return
 
 
