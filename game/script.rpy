@@ -874,6 +874,11 @@ label argument:
         narrator"Andreas shrugged"
         an"I dunno, it feels wrong to go against what she says"
         c"Yeah but nothing really comes out of it, nothing will happen if you DO {i}disobey{/i} her"
+        an"I mean, I guess your right"
+        c"Look, I'll help smooth things over with the teacher if that helps"
+        narrator"He seemed a bit more inclined to do that"
+        play music schoolBell
+        stop music 
         
     return
 
