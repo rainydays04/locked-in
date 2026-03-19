@@ -81,11 +81,6 @@ transform topleft:
 
 label start:
     show bg empty
-    menu:
-        "jumP":
-            jump cafe_1
-        "no":
-            c"ok"
     narrator "The world values prestige"
     narrator "This world asks for those who can work endlessly"
     narrator "Anything in between is a waste, a distraction"
@@ -879,8 +874,18 @@ label argument:
         narrator"He seemed a bit more inclined to do that"
         play music schoolBell
         stop music 
-        
+        an"Hey, I'll talk more about this with you later, alright?"
+        c"Callista nods and goes off to her class"
+        hide callista with moveoutleft
+    hide andreas
+    show bg empty
+    jump school_2
+
     return
+
+label school_2:
+    show bg classroom
+    
 
 
 
