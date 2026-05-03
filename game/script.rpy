@@ -885,6 +885,32 @@ label argument:
 
 label school_2:
     show bg classroom
+    show callista with moveinleft
+    narrator"Callista goes to her desk and settles down with her breakfast when Amie walks over"
+    show amie with moveinright
+    a"Hey, I wanted to stop by and give you breakfast like usual- oh"
+    a"You already got breakfast"
+    menu:
+        "Yeah I decided to be healthy for once":
+            c"Yeah, I thought it was time I start you know, focusing on my health more"
+            a"Oh yeah thats good. I mean like, if you ever need help in like keeping up those good habits, just know I got your back"
+            c"Yeah I know. Here have some bread"
+            narrator"Callista literally breaks bread with Amie"
+            a"Thanks, see you around"
+            hide amie with moveoutright
+            show lilith at topleft with moveinleft 
+            l"Why did you lie to her"
+            c"I just didn't want her to feel bad"
+            c"I already blew her off a bunch these past few days"
+            l"I guess, but I think she would happy to hear you've been making new friends"
+        "I went out with a friend":
+            c"I was invited out by a friend"
+            narrator"Amie lights up hearing this"
+            a"Oh that's great, I'm happy you got to go out this morning, but next time bring me some sweet bread"
+            narrator"Amie smiled and left to her class"
+            hide amie with moveoutright
+
+
     
 
 
