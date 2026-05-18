@@ -39,9 +39,9 @@ image callista = im.Scale("callista.png",1000,1000)
 image amie = im.Scale("amie.png",1000,1000)
 image lilith = im.Scale("fairy.png",500,500)
 image grace = im.Scale("grace.png",1000,1000)
-image hannah = im.Scale("hannah.png",1000,1000)
+image hannah = im.Scale("hannah.gif",1000,1000)
 image andreas = im.Scale("andreas.png",1000,1000)
-image jason = im.Scale("jason.png",1000,1000)
+image jason = im.Scale("jason.gif",1000,1000)
 image twogirls = im.Scale("twogirls.png",1000,1000)
 image sisterphoto = im.Scale("sisterphoto.png",1000,1000)
 
@@ -880,7 +880,6 @@ label argument:
     hide andreas
     show bg empty
     jump school_2
-
     return
 
 label school_2:
@@ -909,6 +908,24 @@ label school_2:
             a"Oh that's great, I'm happy you got to go out this morning, but next time bring me some sweet bread"
             narrator"Amie smiled and left to her class"
             hide amie with moveoutright
+
+    if club=="robotics":
+        jump robotics_day2
+    elif club=="newspaper":
+        jump newspaper_day2
+    else:
+        jump gardening_day2
+    return
+
+label gardening_day2:
+    hide callista
+    show bg gardening
+    show Jason at left
+    show callista at right
+    
+
+
+
 
 
     
