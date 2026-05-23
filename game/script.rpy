@@ -81,6 +81,11 @@ transform topleft:
 
 label start:
     show bg empty
+    menu:
+        "skip?":
+            jump gardening_day2
+        "no":
+            narrator"ok"
     narrator "The world values prestige"
     narrator "This world asks for those who can work endlessly"
     narrator "Anything in between is a waste, a distraction"
@@ -920,7 +925,7 @@ label school_2:
 label gardening_day2:
     hide callista
     show bg gardening
-    show Jason at left
+    show jason at left
     show callista at right
     narrator"Upon walking into the garden, Callista immediatly notices that all the club members seem to have gotten to work"
     narrator"She walks up to Jason who is locked in on a clipboard in hand"
@@ -944,20 +949,20 @@ label gardening_day2:
         "Is it because of Hannah?":
             c"That was not the only reason, was it?"
             narrator"He nods, and contemplates for a moment before finally sharing"
-        j"No point in avoiding the obvious atp"
-        j"Hannah and I started dating, some of our close friends helping in setting up the garden"
-        narrator"His face darkened and he lowered his gaze, looking away"
-        j"One of our friends though ended up passing and we had very different ways of coping{p}That's why she started the robotics club"
-        j"Hannah wanted to get away from gardening, anything that reminded us of our friend"
-        narrator"Jason curls up his fist slightly as he looks off towards the garden"
-        c"She is the one who planted the crysanthemums. Isn't she"
-        narrator"He looks a bit startled and looks down at her"
-        j"How did you know that?"
-        c"My sister used to talk about the gardening club, showing me pictures of the crysanthemums and promised to bring me to school to show me them"
-        c"She always had a knack of keeping good company around her, even until the end"
-        hide callista
-        hide jason
-        show bg empty
+    j"No point in avoiding the obvious atp"
+    j"Hannah and I started dating, some of our close friends helping in setting up the garden"
+    narrator"His face darkened and he lowered his gaze, looking away"
+    j"One of our friends though ended up passing and we had very different ways of coping{p}That's why she started the robotics club"
+    j"Hannah wanted to get away from gardening, anything that reminded us of our friend"
+    narrator"Jason curls up his fist slightly as he looks off towards the garden"
+    c"She is the one who planted the crysanthemums. Isn't she"
+    narrator"He looks a bit startled and looks down at her"
+    j"How did you know that?"
+    c"My sister used to talk about the gardening club, showing me pictures of the crysanthemums and promised to bring me to school to show me them"
+    c"She always had a knack of keeping good company around her, even until the end"
+    hide callista
+    hide jason
+    show bg empty
 
 
 label roboitics_day2:
