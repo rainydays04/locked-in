@@ -937,8 +937,28 @@ label gardening_day2:
             narrator"He pauses for a minute and contemplates how much he should tell her"
             j"I was really shy when I first came to school"
             j"My brother was this big trackstar hotshot and people were expecting me to follow in his footsteps"
-            j"I would wait for him to leave practice "
+            j"I would wait for him to leave practice.{p}in honesty I should have been practicing a sport myself, but that wasn't for me yk?"
+            j"I began studying in the garden then tending to it...{w}then Hannah, the current robotics team captain, came around"
+            j"She very much spearheaded my gardening hobby into a club, helping me prep the garden"
+
         "Is it because of Hannah?":
+            c"That was not the only reason, was it?"
+            narrator"He nods, and contemplates for a moment before finally sharing"
+        j"No point in avoiding the obvious atp"
+        j"Hannah and I started dating, some of our close friends helping in setting up the garden"
+        narrator"His face darkened and he lowered his gaze, looking away"
+        j"One of our friends though ended up passing and we had very different ways of coping{p}That's why she started the robotics club"
+        j"Hannah wanted to get away from gardening, anything that reminded us of our friend"
+        narrator"Jason curls up his fist slightly as he looks off towards the garden"
+        c"She is the one who planted the crysanthemums. Isn't she"
+        narrator"He looks a bit startled and looks down at her"
+        j"How did you know that?"
+        c"My sister used to talk about the gardening club, showing me pictures of the crysanthemums and promised to bring me to school to show me them"
+        c"She always had a knack of keeping good company around her, even until the end"
+        hide callista
+        hide jason
+        show bg empty
+
 
 label roboitics_day2:
 
