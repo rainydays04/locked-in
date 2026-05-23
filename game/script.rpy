@@ -922,6 +922,28 @@ label gardening_day2:
     show bg gardening
     show Jason at left
     show callista at right
+    narrator"Upon walking into the garden, Callista immediatly notices that all the club members seem to have gotten to work"
+    narrator"She walks up to Jason who is locked in on a clipboard in hand"
+    c"Hey, sorry for being late, I went to go get some drinks"
+    j"Yeah, it's fine for right now, just try not to let it happen again, alright?"
+    j"Making some plans for the gardening club"
+    narrator"On the clipboard there is a sketch out blueprint of the garden and plant placement"
+    c"Wow, this certainly is a change from last time"
+    j"Yeah, well I said I would take charge and this garden means a lot to me"
+    menu:
+        "It does?":
+            c"Oh, does it really mean that much to you?"
+            j"Yeah, it really does"
+            narrator"He pauses for a minute and contemplates how much he should tell her"
+            j"I was really shy when I first came to school"
+            j"My brother was this big trackstar hotshot and people were expecting me to follow in his footsteps"
+            j"I would wait for him to leave practice "
+        "Is it because of Hannah?":
+
+label roboitics_day2:
+
+label newspaper_day2:
+
     
 
 
