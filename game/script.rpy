@@ -908,7 +908,11 @@ label school_2:
             a"Oh that's great, I'm happy you got to go out this morning, but next time bring me some sweet bread"
             narrator"Amie smiled and left to her class"
             hide amie with moveoutright
-
+    
+    hide callista
+    show bg empty
+    play music schoolBell
+    stop music 
     if club=="robotics":
         jump robotics_day2
     elif club=="newspaper":
@@ -960,7 +964,29 @@ label gardening_day2:
     show bg empty
 
 
-label roboitics_day2:
+label robotics_day2:
+    show bg computerRoom
+    show hannah at left
+    show callista at right
+    narrator"Callista enters the robotics room to find that the tables have been moved to the sides and the robotics team is sitting in a circle conversing"
+    c"Sorry for my tardiness"
+    h"It's fine, we were just beginning the discussion. Here, sit next to me"
+    narrator"The other team members were arguing for Hannah's attention, suggesting different ideas. Hannah appeared rather overwhelmed"
+    c"Need help?"
+    h"Please"
+    menu:
+        "Offer them to talk in turns":
+            c"How about we go around and share our ideas one by one?"
+            narrator"The lot agree and go off to discuss among themselves"
+
+        "Offer for them to write down their ideas first":
+            c"How about we write down our ideas first and then we can share them?"
+            narrator"The group begins to take out notepads and laptops to begin writing down their ideas"
+    narrator"In the meanwhile, Callista goes to a different portion of the room to talk to Hannah"
+    c"So, what was that about?"
+    h"You know my discussion from this morning?"
+
+    
 
 label newspaper_day2:
 
