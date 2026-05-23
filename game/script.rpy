@@ -81,11 +81,6 @@ transform topleft:
 
 label start:
     show bg empty
-    menu:
-        "skip?":
-            jump gardening_day2
-        "no":
-            narrator"ok"
     narrator "The world values prestige"
     narrator "This world asks for those who can work endlessly"
     narrator "Anything in between is a waste, a distraction"
