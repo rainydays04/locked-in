@@ -985,6 +985,27 @@ label robotics_day2:
     narrator"In the meanwhile, Callista goes to a different portion of the room to talk to Hannah"
     c"So, what was that about?"
     h"You know my discussion from this morning?"
+    c"With{w}uhh{w}..."
+    h"Jason"
+    c"Right"
+    h"He is the club leader for the gardening club"
+    narrator"She pulls her close and has her listen close to her"
+    h"We had a disagreement last year and uh.."
+    h"Did not end well"
+    narrator"Callista looked back and forth confused"
+    menu:
+        "How did you meet":
+            c"How did the two of you meet? You two seem very..."
+            narrator"Hannah raised an eyebrow"
+            h"Different? Heh, yeah"
+            narrator"She looked up and brought her knees to her chest"
+            h"We started the gardening club together, you know"
+            h"I saw him out there after school alone and we started tending to the garden together"
+            h"We built it up into the club it is with some friends to but uh..."
+            h"Well after our friend uh...died, we had a falling out"
+            narrator"She shook her head"
+            h"I got scared. The garden reminded me too much of her so I started the robotics club"
+        "What was the disagreement":
 
     
 
