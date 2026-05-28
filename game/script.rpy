@@ -1058,10 +1058,11 @@ label robotics_day2:
     
 
 label newspaper_day2:
-
-
+    show bg newspaper
+    narrator"When Callista walked into the newpaper room, there was something different"
+    narrator"Sure, everyone was working on their projects, but something was missing"
+    c"Andreas..."
     
-
 
 
 
