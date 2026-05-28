@@ -80,6 +80,11 @@ transform topleft:
 
 
 label start:
+    menu:
+        "Skip":
+            jump newspaper_day2
+        "dont":
+            narrator"ok"
     show bg empty
     narrator "The world values prestige"
     narrator "This world asks for those who can work endlessly"
@@ -1072,6 +1077,15 @@ label newspaper_day2:
     narrator"Callista heads to a table"
     show callista at center
     show lilith at topleft with moveinleft 
+    l"Where is lover boy anyways"
+    narrator"Callista jumps back in suprise and looks at Lilith"
+    c"Where have you been?"
+    l"Around"
+    l"But I know you are busy at work and you gotta respect I am busy with mine"
+    c"Got it"
+    narrator"Callista began to sift through the paper work"
+    narrator"The contents of the papers contained"
+    //i have no clue what to put 
     
 
 
