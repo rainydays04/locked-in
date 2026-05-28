@@ -1040,7 +1040,18 @@ label robotics_day2:
     narrator"The two fell silent in their corner of the room. The only noise being the chatter of the rest of the team on the other side"
     narrator"But it all phased out"
     c"She said you were a strong leader, a planner"
-    
+    h"I am none of those things, not anymore"
+    c"No, you have been proving it time over and over again"
+    c"Especially now"
+    narrator"Hannah smiles and nods"
+    h"You think she'd be proud?"
+    c"Very proud"
+    c"And what are we doing sitting around we got stuff to plan!"
+    narrator"The two reunite with the rest of the group to work"
+    show bg empty with fade
+    hide hannah
+    hide callista
+    return
 
 
 
