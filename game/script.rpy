@@ -1059,10 +1059,21 @@ label robotics_day2:
 
 label newspaper_day2:
     show bg newspaper
+    show callista at left
     narrator"When Callista walked into the newpaper room, there was something different"
     narrator"Sure, everyone was working on their projects, but something was missing"
     c"Andreas..."
+    narrator"Callista looks around and searches the room and realizes there is no Andreas"
+    c"Hey do you know where Andreas is"
+    narrator"{i}Newspaper Member{i}:He said he had to do something, so he will be here later"
+    narrator"{i}Newspaper Member{i}:But he did tell me to hand you some things to work for when he comes, though your a little late"
+    c"Yeah sorry about that-"
+    narrator"A stack of papers are prompty dropped into her hands to which she takes"
+    narrator"Callista heads to a table"
+    show callista at center
+    show lilith at topleft with moveinleft 
     
+
 
 
 
