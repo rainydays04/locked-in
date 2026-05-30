@@ -82,7 +82,7 @@ transform topleft:
 label start:
     menu:
         "Skip":
-            jump newspaper_day2
+            jump going_out
         "dont":
             narrator"ok"
     show bg empty
@@ -918,6 +918,50 @@ label school_2:
     show bg empty
     play music schoolBell
     stop music 
+
+
+
+
+
+label going_out:
+    show bg hallway
+    show callista at left
+    narrator"The school day ended and callista prepared to go to her clubs"
+    g"CALI"
+    c"Oh Grace"
+    show grace at right with moveinright
+    g"Hey hey heyyy"
+    g"Look there is like a sale going on at the cafe and I cannnot do it without someone"
+    menu:
+        "I'll come with you":
+            c"Oh could I just come with you"
+        "I need to get to clubs":
+            c"I'm not sure I can, yk"
+            c"With clubs being in a couple minutes"
+            g"It's just the start of clubs, no one cares that much and besides it won't be that long"
+            narrator"At the verge of denying her again, she could see Lilith in the corner"
+            c"Yeah, sure lets get to it"
+    narrator"Grace's eyes light up and she squeals"
+    g"Great, your the absolute best"
+    g"I was gonna invite a few more people, but those plans like totally fell through so it's just us"
+    c"Um well uh, I could invite a few more people "
+    g"Oh?"
+    c"Uh, you know Amie?"
+    g"Ooo yeah yeah, invite her"
+    nvl_narrator"You are now chatting with Amie"
+    n_nvl"Hey, Ames, you free"
+    a_nvl"Yeah, what's up?"
+    n_nvl"So, like, I wanted to know you wanted to out to a cafe"
+    n_nvl"With Grace and me?"
+    a_nvl"Yeah sure, Ill be there in a bit"
+    n_nvl"Here's the Loc"
+    c"She'll meet us there"
+    g"Great"
+    hide callista
+    hide grace
+    show bg empty
+    show bg cafe
+
     if club=="robotics":
         jump robotics_day2
     elif club=="newspaper":
@@ -925,6 +969,9 @@ label school_2:
     else:
         jump gardening_day2
     return
+
+
+
 
 label gardening_day2:
     hide callista
@@ -967,7 +1014,7 @@ label gardening_day2:
     hide callista
     hide jason
     show bg empty
-
+ 
 
 label robotics_day2:
     show bg computerRoom
@@ -1085,7 +1132,7 @@ label newspaper_day2:
     c"Got it"
     narrator"Callista began to sift through the paper work"
     narrator"The contents of the papers contained"
-    //i have no clue what to put 
+
     
 
 
