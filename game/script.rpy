@@ -961,6 +961,63 @@ label going_out:
     hide grace
     show bg empty
     show bg cafe
+    show grace at left
+    show amie at right
+    g"Hey, Amie, right?"
+    a"Yeah, and your Grace?"
+    g"Yup! that's me"
+    g"Looks like Callista is running late"
+    a"How is that even possible, she was with you"
+    g"She said for me to go ahead because some teacher pulled her into something"
+    g"Buuutt she says she will be here soon"
+    narrator"The two aqueintences stand in awkward silence for a bit"
+    a"You know, we should like get into line yk, so we don't lose the deal"
+    g"Yeah and we only need two people for the deal anyways"
+    narrator"The two girls enter the line and order their drinks"
+    narrator"Once they got their drinks they sat down together"
+    g"So you have been friends with Callista for how long"
+    a"Ever since we were little, and uh how did you meet her"
+    g"Just been you know watching in class and see this girl straight grinding"
+    g"Has she always been so studious?"
+    a"No not really"
+    narrator"She raised her eyebrow"
+    g"What do you mean? I don't think before the new clubs I could imagine that girl without a book or ink stains"
+    a"Well she was always focused on school, but she used to, you know, do more."
+    a"Going to malls after school and goofing off in class"
+    g"And then what? High school hit and then she started to lock in?"
+    narrator"She bit her lower lip and looked down"
+    a"Have you heard of Liana"
+    g"Liana? I think I recognize that name"
+    a"Probably from a few plaques and medals around the school"
+    g"Oh so she was really involved"
+    a"Yeah, but there was an accident on a school trip"
+    a"The cheerleader bus crashed and..."
+    g"Oh right I remember that crash"
+    g"It was tragic"
+    a"It was"
+    g"Wait so how does that connect to Callista"
+    g"Sorry for my insensitivity, but-"
+    a"That was her sister"
+    g"Oh-"
+    narrator"There was a silence between them"
+    a"I never saw her grieve"
+    a"I mean I did. I am. It's the studying and-"
+    narrator"The bell to the cafe rings and Callista enters"
+    hide grace
+    hide amie
+    show callista
+    c"Hey guys, sorry I'm late"
+    c"Gosh, Mr.R is so on me lately!"
+    c"Like there was no need for me to be with her for like...paiting her wall"
+    a"You painted her walls?"
+    c"No I was just THERE FOR IT"
+    c"Anyways. what were you lot talking about?"
+    narrator"Callista got her drink(Without a deal) and the three went about their meal"
+    narrator"After talking for like 15 minutes"
+    c"Alright then, I have to go to my club. I'll meet up with you guys later"
+    narrator"The two said their goodbyes to her"
+    hide callista
+
 
     if club=="robotics":
         jump robotics_day2
