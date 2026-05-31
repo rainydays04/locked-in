@@ -38,7 +38,7 @@ define audio.schoolBell="schoolBell.mp3"
 image callista = im.Scale("callista.png",1000,1000)
 image amie = im.Scale("amie.png",1000,1000)
 image lilith = im.Scale("fairy.png",500,500)
-image grace = im.Scale("grace.png",1000,1000)
+image grace = im.Scale("grace.gif",1000,1000)
 image hannah = im.Scale("hannah.gif",1000,1000)
 image andreas = im.Scale("andreas.png",1000,1000)
 image jason = im.Scale("jason.gif",1000,1000)
@@ -1189,7 +1189,21 @@ label newspaper_day2:
     l"But I know you are busy at work and you gotta respect I am busy with mine"
     c"Got it"
     narrator"Callista began to sift through the paper work"
-    narrator"The contents of the papers contained"
+    narrator"The contents of the papers contained not professional research papers like one would expect"
+    narrator"But diary notes"
+    narrator"The notes seemed to not be in their entirety but them still being in front of her still was shocking"
+    narrator"They went for all four years that Andreas has been in highschool and were snippets onf commentary on his experience"
+    narrator"That spanned from friends, to family, to regular experiences"
+    c"wha-"
+    narrator"Andreas himself walked up to her"
+    an"So. What do you think?"
+    c"Depends, what are you trying to do with it"
+    an"I wanna publish something that is like, in some way personal"
+    an"Not like trynna glorify my achievments or anything"
+    an"But something for people to relate to"
+    an"Maybe something to even learn from"
+    c"That's...nice. WHy haven't you done this sooner?"
+    
     return
 
     
