@@ -946,7 +946,7 @@ label school_2:
             a"Oh that's great, I'm happy you got to go out this morning, but next time bring me some sweet bread"
             narrator"Amie smiled and left to her class"
             hide amie with moveoutright
-    
+    hide lilith
     hide callista
     show bg empty
     play music schoolBell
