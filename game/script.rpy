@@ -837,7 +837,7 @@ label argument:
             narrator"Hannah looks over at Jason"
             j"I am always here to help you you know"
             h"I know, and this goes both ways you know, I'll help you out with the garden"
-        else:
+        if club=="newspaper":
             narrator"Jason smiles kindly at Callista and motions for her to come over"
             an"Hannah, this os one of the newer club members, Callista"
             h"Oh yeah, I've heard of you before around. You're one of the top on the school roster"
