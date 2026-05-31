@@ -80,11 +80,7 @@ transform topleft:
 
 
 label start:
-    menu:
-        "Skip":
-            jump going_out
-        "dont":
-            narrator"ok"
+
     show bg empty
     narrator "The world values prestige"
     narrator "This world asks for those who can work endlessly"
@@ -218,15 +214,15 @@ label day_1:
             c"Fine, I'll choose a stupid club"
     menu:
         "Robotics":
-            $ club=="robotics"
+            $ club="robotics"
             c"I'll join the robotics club"
             l"Great! Let me show you where the club table is"
         "Gardening":
-            $ club=="gardening"
+            $ club="gardening"
             c"I guess I'll join the gardening club"
             l"Ooo getting some vitamin d, I see. I think the club table is around the back"
         "Newspaper":
-            $ club=="newspaper"
+            $ club="newspaper"
             c"The newspaper club seems fun I guess"
             l"Makes sense, The club table is over there"
     narrator"Lilith led Callista around the tables, trying to lead her to the club table, but she bumped into Amie"
@@ -357,9 +353,9 @@ label day_1:
     show bg empty with fade
     if club=="robotics":
         jump robotics_day1
-    elif club=="newspaper":
+    if club=="newspaper":
         jump newspaper_day1
-    else:
+    if club=="gardening":
         jump gardening_day1
     return
 
@@ -493,7 +489,7 @@ label newspaper_day1:
     show callista at left with moveinleft 
     c"Wow this is really good"
     c"They have articles, sources, art, photography of sport and scenery around the town"
-    show andreas at left with moveinleft 
+    show andreas at right with moveinleft 
     an"I don't think that it's a good idea Miss. Hawkins"
     narrator"Callista hid behind a pillar to listen in, unable to hear the other voice"
     an"Yes I'm sure it would be useful, but I don't have the team to-"
@@ -1409,7 +1405,77 @@ label post_fight:
     jump the_week  
 
 label the_week:
-    c"raahhh"
+    show bg empty
+    narrator"As the week went by the club Callista was a part of grew"
+    narrator"This later led to further recognition for her in her clubs and later by the school"
+    show bg bedroom
+    show lilith at topright
+    show callista at left
+    l"You've been busy these past few weeks"
+    c"You have been too"
+    c"It feel like I don't see you as much anymore"
+    l"Well I have been a bit busy with other things"
+    c"Mind enlightening me?"
+    c"I could have sworn that your job was to make sure I didn't become some sort of shut in"
+    l"Yes that, but I also had my own motives"
+    c"And what am i? Simply a vessel?"
+    l"In a way"
+    l"But I ensure you, my goal was to let you enjoy highschool a bit more"
+    c"Yeah I guess."
+    c"I guess these past few weeks have been fun"
+    c"I got to know my club leader more and such"
+    c"Though I really couldn't have done it without you Lilith"
+    l"Please"
+    l"I just held your hand through it"
+    l"And then I let go early on without you realizing"
+    c"I guess...yeah that could be true"
+    l"I'm sure you'll keep going with it once I leave"
+    c"Once you-"
+    c"Wait what"
+    l"Well, I certainly was not going to stay here, goosie"
+    c"Yeah but i thought that-"
+    c"Wait...Goosie?"
+    l"I-"
+    narrator"Callista looked at Lilith and stared"
+    c"Who are-...Liana"
+    c"Im hallucinating"
+    c"No."
+    narrator"Conflicting emotiong caused her to tear up"
+    narrator"Lilith or should we say..Liana simply flew over to her"
+    l"I couldn't tell you. That was part of the deal"
+    c"What deal?"
+    l"Its...its a lot to explain"
+    l"Basically all the girls who died on the bus got to fullfill one thing in their life"
+    l"And this was mine"
+    l"I couldn't bare seeing you dizzying yourself from studying so much"
+    narrator"Callista held this little fairy against her chest"
+    l"Callista"
+    l"Look, you are going to do great"
+    l"Look at all you have already accomplished in a short amount of time"
+    l"All you needed was a little push"
+    c"Please don't make me say goodbye again"
+    c"Wait no..."
+    narrator"She pulled away"
+    c"Let me get a goodbye in this time"
+    narrator"She composed herself"
+    l"Oh Cals you don't have to-"
+    c"Please"
+    c"I didn't give you a proper goodbye when you left onto the bus"
+    l"That isn't your fault"
+    l"None of us knew what would happen"
+    c"I know just"
+    l"I know"
+    narrator"The two calmed down and looked at each other"
+    c"Liana"
+    l"Callista"
+    c"I love you"
+    l"See you on the other side"
+    narrator"As they exchanged their last goodbyes Liana began to fade away"
+    hide lilith with fade
+    narrator"Callista sat in silence of her sister's new absence"
+    narrator"She looked up at the empty room around her"
+    narrator"Her academic calendar used to only have study blocks and exams"
+    narrator"Now with club events, hangouts, and glitter left over from Liana"
 
     
 
