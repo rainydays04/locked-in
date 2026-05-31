@@ -5,14 +5,14 @@
 
 
 #character names
-define a = Character("Amie")
-define c = Character("Callista")
+define a = Character("Amie", color="#821f5f")
+define c = Character("Callista", color="#1f826e")
 define d = Character("Doctor")
-define l = Character("Lilith")
-define g = Character("Grace")
-define h = Character("Hannah")
-define an = Character("Andreas")
-define j = Character("Jason")
+define l = Character("Lilith", color="#e342f5")
+define g = Character("Grace",color="821f5f")
+define h = Character("Hannah",color="#821f5f")
+define an = Character("Andreas",color="#42f548")
+define j = Character("Jason",color="#4287f5")
 define n_nvl = Character("Callista", kind=nvl, image="nighten", callback=Phone_SendSound)
 define a_nvl = Character("Amie", kind=nvl, callback=Phone_ReceiveSound)
 define g_nvl = Character("Grace", kind=nvl, callback=Phone_ReceiveSound)
@@ -37,7 +37,7 @@ define audio.schoolBell="schoolBell.mp3"
 #character images
 image callista = im.Scale("callista.png",1000,1000)
 image amie = im.Scale("amie.png",1000,1000)
-image lilith = im.Scale("fairy.png",500,500)
+image lilith = im.Scale("fairy.gif",500,500)
 image grace = im.Scale("grace.gif",1000,1000)
 image hannah = im.Scale("hannah.gif",1000,1000)
 image andreas = im.Scale("andreas.gif",1000,1000)
