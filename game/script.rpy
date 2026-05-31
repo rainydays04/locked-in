@@ -40,7 +40,7 @@ image amie = im.Scale("amie.png",1000,1000)
 image lilith = im.Scale("fairy.png",500,500)
 image grace = im.Scale("grace.gif",1000,1000)
 image hannah = im.Scale("hannah.gif",1000,1000)
-image andreas = im.Scale("andreas.png",1000,1000)
+image andreas = im.Scale("andreas.gif",1000,1000)
 image jason = im.Scale("jason.gif",1000,1000)
 image twogirls = im.Scale("twogirls.png",1000,1000)
 image sisterphoto = im.Scale("sisterphoto.png",1000,1000)
@@ -90,12 +90,47 @@ label start:
     show callista at right
     show amie at left
     a "Are you still studying?"
-    c "..."#make this an option
+    menu:
+        "Yes":
+            c"Yeah, I have an exame in my first week"
+        "Nah bruh?":
+            c"Nah, im actively doing a dissection"
+            a"Oh haha"
     a "The library is almost closed you know"
-    c"..."#make this an option
+    menu:
+        "Im aware":
+            c"I know"
+            c"The librarian is always trynna drive me out"
+            a"Yeah maybe that's for a reason"
+            narrator"Amie takes the red bull off the table and drinks some"
+            c"Hey!"
+        "Ehhh":
+            c"That's like speed limits"
+            c"A suggestion"
+            a"That's...NO!"
+            a"This is a public establishment girl"
+            c"I am aware"
+            c"That particular status is why you and I are here"
     a "We were going out to get some drinks-"
-    c "I'll pass"
-    a "alright then"
+    menu:
+        "No":
+            c"Nah, Im kinda busy"
+            a"As established before, you are going to be kicked out of this building at one point or another"
+            a"So like...might as well"
+            c"I'm good Amie, Im serios"
+            a"Whatever, girl. Just trynna look out for you"
+
+        "find a way to let her down slowly":
+            c"Maybe tomorrow"
+            a"If you are up any longer you wont be concious for a tomorrow"
+            c"That's what this is for"
+            narrator"She shakes the red bull can"
+            a"That is like, so not a safe and healthy option"
+            c"I haven't died yet"
+            a"That's not funny"
+            c"Not trying to be"
+            a"Fine just get some sleep at some point, alright?"
+            c"Fine"
     hide amie with moveoutleft
     c "{i}ugh... I'm getting dizzy{/i}"
     c "I can...sit up... longer-"
@@ -1477,7 +1512,7 @@ label the_week:
     narrator"Her academic calendar used to only have study blocks and exams"
     narrator"Now with club events, hangouts, and glitter left over from Liana"
     c"Thank you. For everything"
-    
+
 
     
 
