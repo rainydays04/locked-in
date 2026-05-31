@@ -1476,6 +1476,8 @@ label the_week:
     narrator"She looked up at the empty room around her"
     narrator"Her academic calendar used to only have study blocks and exams"
     narrator"Now with club events, hangouts, and glitter left over from Liana"
+    c"Thank you. For everything"
+    
 
     
 
