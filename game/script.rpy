@@ -837,6 +837,37 @@ label argument:
             narrator"Hannah looks over at Jason"
             j"I am always here to help you you know"
             h"I know, and this goes both ways you know, I'll help you out with the garden"
+            narrator"The argument seems to have been tamped down for the time being so Callista walks away to get to class"
+            hide jason
+            hide hannah
+            show callista at left
+            narrator"As Callista is walking to class, she bumps into someone"
+            show andreas at right
+            c"Oh, sorry"
+            an"Oh hey, don't worry about it"
+            an"If anything I should be thanking you"
+            c"Thanking me? Why is that?"
+            an"I have been needing to interview those two for a while for the school newspaper, but they kept bickering"
+            c"Why didn't you just break it up, or wait later?"
+            an"I didn't want to intrude, but I'm also on a time crunch"
+            c"Oh, your part of newspaper club?"
+            an"Leader of it actually. I'm Andreas"
+            c"Callista"
+            an"Hey, could I get your opinion for a peice over brunch over the weekend?"
+            menu:
+                "Sure, why not":
+
+                    c"Yeah, I'm free this weekend"
+                    an"Nice, here is my number"
+                    $ an_status=="brunch"
+                    narrator"The two of them exchange phone numbers and parted ways for class"
+                "Sorry...":
+                    c"Sorry, I am not avalib-"
+                    narrator"Callista suddenly feels glitter across her body and begins doing that like itchy dance"
+                    an"Are you alright?"
+                    c"Yeah, just dry skin from the cold air"
+                    an"Oh here use some of my lotion"
+                    narrator"Callista takes the lotion and runs off"
         if club=="gardening":
             narrator"Jason smiles kindly at Callista and motions for her to come over"
             an"Hannah, this os one of the newer club members, Callista"
@@ -853,37 +884,38 @@ label argument:
             j"I'll try to get the garden back to its former glory or something, alright?"
             h"That isn't the point, you are suppose to have your members help out with it"
             j"I-i'll try, I will"
-        narrator"The argument seems to have been tamped down for the time being so Callista walks away to get to class"
-        hide jason
-        hide hannah
-        show callista at left
-        narrator"As Callista is walking to class, she bumps into someone"
-        show andreas at right
-        c"Oh, sorry"
-        an"Oh hey, don't worry about it"
-        an"If anything I should be thanking you"
-        c"Thanking me? Why is that?"
-        an"I have been needing to interview those two for a while for the school newspaper, but they kept bickering"
-        c"Why didn't you just break it up, or wait later?"
-        an"I didn't want to intrude, but I'm also on a time crunch"
-        c"Oh, your part of newspaper club?"
-        an"Leader of it actually. I'm Andreas"
-        c"Callista"
-        an"Hey, could I get your opinion for a peice over brunch over the weekend?"
-        menu:
-            "Sure, why not":
+            narrator"The argument seems to have been tamped down for the time being so Callista walks away to get to class"
+            hide jason
+            hide hannah
+            show callista at left
+            narrator"As Callista is walking to class, she bumps into someone"
+            show andreas at right
+            c"Oh, sorry"
+            an"Oh hey, don't worry about it"
+            an"If anything I should be thanking you"
+            c"Thanking me? Why is that?"
+            an"I have been needing to interview those two for a while for the school newspaper, but they kept bickering"
+            c"Why didn't you just break it up, or wait later?"
+            an"I didn't want to intrude, but I'm also on a time crunch"
+            c"Oh, your part of newspaper club?"
+            an"Leader of it actually. I'm Andreas"
+            c"Callista"
+            an"Hey, could I get your opinion for a peice over brunch over the weekend?"
+            menu:
+                "Sure, why not":
 
-                c"Yeah, I'm free this weekend"
-                an"Nice, here is my number"
-                $ an_status=="brunch"
-                narrator"The two of them exchange phone numbers and parted ways for class"
-            "Sorry...":
-                c"Sorry, I am not avalib-"
-                narrator"Callista suddenly feels glitter across her body and begins doing that like itchy dance"
-                an"Are you alright?"
-                c"Yeah, just dry skin from the cold air"
-                an"Oh here use some of my lotion"
-                narrator"Callista takes the lotion and runs off"
+                    c"Yeah, I'm free this weekend"
+                    an"Nice, here is my number"
+                    $ an_status=="brunch"
+                    narrator"The two of them exchange phone numbers and parted ways for class"
+                "Sorry...":
+                    c"Sorry, I am not avalib-"
+                    narrator"Callista suddenly feels glitter across her body and begins doing that like itchy dance"
+                    an"Are you alright?"
+                    c"Yeah, just dry skin from the cold air"
+                    an"Oh here use some of my lotion"
+                    narrator"Callista takes the lotion and runs off"
+
     elif club=="newspaper":
         show callista at left
         show andreas at right
