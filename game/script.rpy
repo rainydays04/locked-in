@@ -1271,7 +1271,23 @@ label newspaper_day2:
     c"{i}was{i}"
     c"..."
     c"I'm sorry for your loss"
-    an""
+    an"Thank you"
+    c"I lost someone in the accident too"
+    c"My older siser, Liana"
+    narrator"He turned his head to her and looked in slight shock"
+    narrator"Tears welling in his eyes"
+    an"Your Liana's sister"
+    narrator"Callista nodded"
+    narrator"He chuckled softly"
+    an"Hah... what a coincidence"
+    an"I should have known, your a spitting image of her"
+    c"Please telling me, your kidding"
+    an"No no, Im serious"
+    an"You have the same eyes as her"
+    c"Well I guess I can see the comparison there"
+    an"Is that why you joined this club?"
+    an"Because I knew Liana?"
+    
     return
 
     
