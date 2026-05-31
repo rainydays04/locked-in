@@ -429,6 +429,7 @@ label robotics_day1:
                     show lilith at topleft  with moveinleft 
                     l"Doesn't look like they are working on whatever she said"
                     narrator"Nothing else was said as they all continued working in silence, Hannah's soft voice filling the room"
+                    hide lilith
                 "Ask about the club":
                     c"So what are you guys working on right now?"
                     narrator"Hannah doesn't take her eyes off the screen as she types away at the computer"
@@ -619,9 +620,10 @@ label gardening_day1:
                     narrator"She gently strokes the flowers, barely perserved from other's destruction"
                     show lilith at topleft with moveinright 
                     l"Here let me just"
-                    #show flower in her hair
+                    narrator"Lilith puts a flower in Callista's hair"
                     c"Thank you"
                     #tears
+                    hide lilith
         "Talk to Jason":
             show jason at left  with moveinleft 
             narrator"He looks up and brushed his hands on his legs"
