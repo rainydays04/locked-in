@@ -6,4 +6,4 @@ It stemmed from my own experimentation in my life when meeting new people and th
 
 
 
-I can't do art well and usually I use a picrew, but this time around I used blank images to focus more on the story and mechanics of the game
+Made the character art myself, though i usually dont, on piksel
