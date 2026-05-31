@@ -1071,6 +1071,7 @@ label gardening_day2:
     hide callista
     hide jason
     show bg empty
+    jump post_fight
     return
  
 
@@ -1161,6 +1162,7 @@ label robotics_day2:
     show bg empty with fade
     hide hannah
     hide callista
+    jump post_fight
     return
 
 
@@ -1287,8 +1289,37 @@ label newspaper_day2:
     c"Well I guess I can see the comparison there"
     an"Is that why you joined this club?"
     an"Because I knew Liana?"
-    
+    c"Well no, at first I just wanted to join clubs"
+    c"But I began to recognize people from my sister's year"
+    c"And one thing just led to another"
+    an"I see"
+    an"Well, I'm glad you found your way to the newspaper club regardless"
+    c"Thanks"
+    narrator"She checked the time and saw it was getting late"
+    c"It was nice talking to you, but i need to get home"
+    an"I could walk you home"
+    menu:
+        "There is no need":
+            c"You seriously do not need to"
+            an"It would be my pleasure"
+            an"Besides, its getting late"
+            c"I would like that"
+        "That would be nice":
+            c"I would... appreciate that"
+    narrator"The two of them left the cafe and they began to walk back"
+    hide callista
+    hide andreas
+    show bg empty
+    jump the_week
+
     return
+
+
+label post_fight:
+    c"WEeeee"
+
+label the_week:
+    c"raahhh"
 
     
 
