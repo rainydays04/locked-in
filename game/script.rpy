@@ -1071,6 +1071,7 @@ label gardening_day2:
     hide callista
     hide jason
     show bg empty
+    return
  
 
 label robotics_day2:
@@ -1189,6 +1190,7 @@ label newspaper_day2:
     c"Got it"
     narrator"Callista began to sift through the paper work"
     narrator"The contents of the papers contained"
+    return
 
     
 
