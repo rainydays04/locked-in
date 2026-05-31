@@ -1044,7 +1044,22 @@ label going_out:
     c"No I was just THERE FOR IT"
     c"Anyways. what were you lot talking about?"
     narrator"Callista got her drink(Without a deal) and the three went about their meal"
-    narrator"After talking for like 15 minutes"
+    c"So what have you lot been talking about?"
+    a"Just school stuff"
+    c"Liar"
+    g"Wow, you catch on quickly"
+    c"Alright you two, what are you hiding"
+    g"A suprise party..?"
+    c"My birthday was 3 weeks ago"
+    a"You're always to telling me that it is better to prepare early then risk never"
+    c"That not what I say"
+    a"Oh darn"
+    g"Gosh is your club everyday?"
+    c"Yeahhh but idleness has never been my thing"
+    g"It totally could be tho"
+    c"Not happening"
+    c"Don't think I like you two teaming up on me"
+    a"Don't reacall when i asked"
     c"Alright then, I have to go to my club. I'll meet up with you guys later"
     narrator"The two said their goodbyes to her"
     hide callista
@@ -1512,6 +1527,7 @@ label the_week:
     narrator"Her academic calendar used to only have study blocks and exams"
     narrator"Now with club events, hangouts, and glitter left over from Liana"
     c"Thank you. For everything"
+    return
 
 
     
