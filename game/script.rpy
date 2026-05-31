@@ -804,6 +804,8 @@ label cafe_1:
         g"Enough to protect his garden?"
         narrator"Callista shrugged"
     narrator"The two partways to get to school"
+    hide callista
+    hide grace
     jump argument
    
 
@@ -915,8 +917,9 @@ label argument:
                     c"Yeah, just dry skin from the cold air"
                     an"Oh here use some of my lotion"
                     narrator"Callista takes the lotion and runs off"
-
-    elif club=="newspaper":
+    hide hannah
+    hide jason
+    if club=="newspaper":
         show callista at left
         show andreas at right
         an"Those two have been fighting all morning"
@@ -954,9 +957,9 @@ label argument:
 
 label school_2:
     show bg classroom
-    show callista with moveinleft
+    show callista at left with moveinleft
     narrator"Callista goes to her desk and settles down with her breakfast when Amie walks over"
-    show amie with moveinright
+    show amie  at right with moveinright 
     a"Hey, I wanted to stop by and give you breakfast like usual- oh"
     a"You already got breakfast"
     menu:
