@@ -1366,6 +1366,7 @@ label newspaper_day2:
 label post_fight:
     show bg cafe
     show andreas at left
+    show callista at right
     an"Hey, thanks for meeing me here"
     c"Of course, it seemed kinda sucky what the teacher was trying to force you to write about"
     an"Yeah, but what really derails it is the fact that I have other things I tried working on"
