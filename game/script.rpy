@@ -86,6 +86,7 @@ label start:
     narrator "This world asks for those who can work endlessly"
     narrator "Anything in between is a waste, a distraction"
     c "At least that's what my mom has always told me"
+    c"It's what she has been telling me since..."
     show bg library
     show callista at right
     show amie at left
@@ -135,8 +136,7 @@ label start:
     c "{i}ugh... I'm getting dizzy{/i}"
     c "I can...sit up... longer-"
     hide callista
-    #have like a fading animation?
-    show bg empty
+    show bg empty with fade
     show bg hospital
     show callista 
     c"{i}Where am I?{/i}"
@@ -224,13 +224,21 @@ label day_1:
     c"We only have to meet once a month and I get a free book out of it too"
     hide lilith
     show bg front
-    #noises
-    narrator"Lilith was trying to pass by, not planning to join a new clubs, but her new companion has other plans"
+    
+    narrator"Callista was trying to pass by, not planning to join a new clubs, but her new companion has other plans"
     show lilith with moveinleft 
     l"Ok so here are the BEST clubs for you to join with how would"
     narrator"The fairy shows three flyers: Robotics, Newpaper, and Gardening"
     narrator"Callista looked incredulously"
     c"And I have to choose one of these?"
+    l"Yes there clubs are proven to be the most out going and long lasting ones"
+    c"Why do I feel like you have other reasons to this?"
+    l"What could my ulterior motives be?"
+    l"My sole purpose is to help you out here kid"
+    c"Yeah sure"
+    narrator"She looks over to to other flyters"
+    l"Hey hey, I have your flyers here"
+    c"Why can't i choose out other clubs"
     l"You wanna find out happens if you don't abide?"
     menu:
         "Yes":
@@ -379,10 +387,11 @@ label day_1:
     narrator"Lilith streches and yawns"
     l"You should go to the club meetings today"
     c"But they aren't until next week"
-    l"Glitter?"
+    l"Are you asking to be glittered?"
     narrator"Callista tightens her hold around her pencil, biting her lower lip"
-    c"Fine"
+    c"Fine, we'll do it your way"
     narrator"Lilith smiles with satisfaction and climbs into Callista's bag to continue her nap"
+    c"Gosh this thing is insufferable"
     hide callista
     hide lilith
     show bg empty with fade
@@ -1114,6 +1123,7 @@ label going_out:
 
 
 label gardening_day2:
+   
     hide callista
     show bg gardening
     show jason at left
@@ -1241,10 +1251,13 @@ label robotics_day2:
     h"You think she'd be proud?"
     c"Very proud"
     c"And what are we doing sitting around we got stuff to plan!"
-    narrator"The two reunite with the rest of the group to work"
-    show bg empty with fade
-    hide hannah
+    narrator"Hana laughs softly"
+    h"Yeah, your right"
+    h"Let's get to work"
+    narrator"The two of them join the rest of the group to talk about plans"
     hide callista
+    hide hana
+    show bg empty with fade
     jump post_fight
     return
 
@@ -1280,7 +1293,8 @@ label newspaper_day2:
     narrator"They went for all four years that Andreas has been in highschool and were snippets onf commentary on his experience"
     narrator"That spanned from friends, to family, to regular experiences"
     c"wha-"
-    hide lilith
+    l"He's coming"
+    hide lilith with moveoutright
     show callista at right
     show andreas at left
     narrator"Andreas himself walked up to her"
