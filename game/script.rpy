@@ -1195,6 +1195,9 @@ label newspaper_day2:
     narrator"They went for all four years that Andreas has been in highschool and were snippets onf commentary on his experience"
     narrator"That spanned from friends, to family, to regular experiences"
     c"wha-"
+    hide lilith
+    show callista at right
+    show andreas at left
     narrator"Andreas himself walked up to her"
     an"So. What do you think?"
     c"Depends, what are you trying to do with it"
@@ -1202,8 +1205,30 @@ label newspaper_day2:
     an"Not like trynna glorify my achievments or anything"
     an"But something for people to relate to"
     an"Maybe something to even learn from"
-    c"That's...nice. WHy haven't you done this sooner?"
+    c"That's...nice. Why haven't you done this sooner?"
+    narrator"He leaned back in his chair and sighed"
+    an"I was always busy with other things to work on"
+    an"And besides, you saw how that teacher was, everyone is always expecting me to facilitate adding some kind of topic to the paper"
+    c"So why now?"
+    an"Im going to graduate soon"
+    an"And I want to publish something that interests me for once"
+    narrator"He sits up hearing what he said"
+    an"Not to say I haven't been interested in the things I have been writing"
+    narrator"He covered his face with his hand"
+    c"You want to take this somewhere else?"
+    narrator"He nods"
+    c"I know a place"
+    hide andreas
+    hide callista
+    show bg cafe
+    show callista at left
+    show andreas at right
+    an"This is a nice cafe. And its a good thing you knew about the sale"
+    c"Yeah. How lucky we are"
+    c"Anyways, about the strory"
     
+
+
     return
 
     
